@@ -1,0 +1,28 @@
+.video-playback{
+    
+}
+
+.video-playback video{
+    height: 480px;
+    width: 640px;
+}
+
+#still, #play{
+    position: fixed;
+    left: 32px;
+}
+
+#still{
+    z-index: 100;
+}
+
+#play{
+    z-index: 10;
+}
+
+#still:hover{
+    transition-duration: 1400ms;
+    opacity: 0;
+}
+
+
