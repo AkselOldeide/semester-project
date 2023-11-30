@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(192,0,0);
+    background: -moz-linear-gradient(0deg, rgba(192,0,0,1) 0%, rgba(255,215,0,1) 49%, rgba(53,89,215,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(192,0,0,1) 0%, rgba(255,215,0,1) 49%, rgba(53,89,215,1) 100%);
+    background: linear-gradient(0deg, rgba(192,0,0,1) 0%, rgba(255,215,0,1) 49%, rgba(53,89,215,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c00000",endColorstr="#3559d7",GradientType=1);
+}
+
+#top-banner{
+    background-image: url(./Assets/Images/banner-image.png);
+    width: 100%;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto;
+    display: flex;
+}
+
+#top-banner h1{
+    margin: auto;
+    display: flex;
+}
+
+#states-of-matter-description, #top-banner {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 32px;
+}
+
+.exhibition-card img{
+    height: 188px;
+    width: 337px;
+    object-fit:cover;
+}
+
+.exhibition-card{
+    background-color: #000000b3;
+    border-radius: 10px;
+    color: #FFFFFF;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    margin: 20px 32px;
+    text-decoration: none;
+}
+
+.element-long-description{
+    display: none;
+}
+
+/*Media Queries*/
+
+
+/*Breakpoint - Tablet*/
+@media (min-width: 750px){
+    .exhibition-card img{
+        height: 333px;
+        width: 239px;
+        object-fit:cover;
+    }
+
+    .exhibition-card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .exhibition-card div{
+        margin-left: 32px;
+        margin-right: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .element-long-description{
+        display:block;
+    }
+
+    .discover-more{
+        text-align: end;
+        align-items: end;
+    }
+
+    #top-banner{
+        height: 300px;
+    }
+}
+
+/*Breakpoint - Desktop*/
+@media (min-width: 1300px){
+    #top-banner{
+        height: 500px;
+    }
+
+    .exhibition-card img{
+        height: 333px;
+        width: 239px;
+        object-fit:cover;
+    }
+
+    .exhibition-card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .exhibition-card div{
+        margin-left: 32px;
+        margin-right: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .element-long-description{
+        display:block;
+    }
+
+    .discover-more{
+        text-align: end;
+        align-items: end;
+    }
+
+}
