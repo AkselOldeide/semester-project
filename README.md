@@ -1,11 +1,17 @@
 # semester-project
-The group semester project for Aksel, Helene and Panida - Winter 2023
+The winter 2023 group semester project for [Aksel Oldeide](https://github.com/AkselOldeide), [Helene Flått](https://github.com/Helflaa) and [Panida Paethanom](https://github.com/Panida287) :snowman: :snowflake: :christmas_tree:
 
-Latest functioning website build running here: www.infernal-triad.netlify.app
+Latest functioning website build running [here](www.infernal-triad.netlify.app)
 
-Paths and assets:
-  External tools and software:
-    * Gradient used for the background coloration on the "exhibitions"-page was generated using: https://cssgradient.io - By entering the colors used in our figma-document.
-    * Animations and videos used on our page are from https://www.freepik.com
-    * Illustration images created with ai image generators: https://www.midjourney.com/home and https://www.bing.com/create.
+## Paths and assets:
 
+### External tools and software:
+ 
+:rainbow: Gradient for the background on the "exhibitions"-page was generated using: [CSS Gradient](https://cssgradient.io)
+
+    
+:movie_camera: Animations and videos used on our page are from [Freepik](https://www.freepik.com)
+
+ 
+:framed_picture: Illustration images created with AI image generators:
+[Midjourney](https://www.midjourney.com/home) and [Bing Ai](https://www.bing.com/create).
