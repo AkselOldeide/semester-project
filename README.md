@@ -1,4 +1,4 @@
-![](./Assets/Logo/atom-core-gradient1a.png.png)
+![](./Assets/Logo/logo-screenshot.png)
 
 # semester-project
 The winter 2023 group semester project for [Aksel Oldeide](https://github.com/AkselOldeide), [Helene Flått](https://github.com/Helflaa) and [Panida Paethanom](https://github.com/Panida287) :snowman: :snowflake: :christmas_tree:
