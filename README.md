@@ -1,7 +1,7 @@
 ![](./Assets/Logo/logo-screenshot.png)
 
 # semester-project
-The winter 2023 group semester project for [Aksel Oldeide](https://github.com/AkselOldeide), [Helene Flått](https://github.com/Helflaa) and [Panida Paethanom](https://github.com/Panida287) :snowman: :snowflake: :christmas_tree:
+The winter 2023 group semester project for [Aksel Oldeide](https://github.com/AkselOldeide), [Helene Flått](https://github.com/Helflaa) and [Panida Paethanom](https://github.com/Panida287) ⛄ ❄️ 🎄
 
 Latest functioning website build running [here](https://infernal-triad.netlify.app)
 
@@ -9,9 +9,9 @@ Latest functioning website build running [here](https://infernal-triad.netlify.a
 
 ### External tools and software:
  
-:rainbow: Gradient for the background on the "exhibitions"-page was generated using: [CSS Gradient](https://cssgradient.io)
+🌈 Gradient for the background on the "exhibitions"-page was generated using: [CSS Gradient](https://cssgradient.io)
 
-:movie_camera: Animations and videos used on our page are from [Freepik](https://www.freepik.com)
+🎥 Animations and videos used on our page are from [Freepik](https://www.freepik.com)
 
-:framed_picture: Illustration images created with AI image generators:
+🖼️ Illustration images created with AI image generators:
 [Midjourney](https://www.midjourney.com/home) and [Bing Ai](https://www.bing.com/create).
