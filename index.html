@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat:wght@100;300&family=Playfair+Display&family=Roboto:wght@300&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,11 +20,14 @@
     <a href="#">
         <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
     </a>
-    <span class="title">
-    Matte
-    <br>
-     Museum
+    <div class="title">
+        <span class="matter">
+        Matter
     </span>
+        <span class="museum">
+        Museum
+    </span>
+    </div>
     <div class="nav">
         <input type="checkbox" id="menu-checkbox"/>
         <label for="menu-checkbox" id="menu-label">
@@ -33,25 +35,27 @@
                 <i class="fa-solid fa-bars"></i>
             </span>
         </label>
-        <ul class="main-nav">
-            <li>
-                <a href="#">Exhibition</a>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-            </li>
-            <li>
-                <a href="#">Tickets</a>
-            </li>
-            <li>
-                <a href="#">About us</a>
-            </li>
-        </ul>
+        <div class="overlay">
+            <ul class="main-nav">
+                <li>
+                    <a class="nav" href="#">Exhibition</a>
+                </li>
+                <li>
+                    <a class="nav" href="#">Gallery</a>
+                </li>
+                <li>
+                    <a class="nav" href="#">Tickets</a>
+                </li>
+                <li>
+                    <a class="nav" href="#">About us</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
 
 <div class="hero-banner">
-    <img class="pic-1" alt="parents and children" scr="assets/images/parents-and-children-1.jpeg" height="543"
+    <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
          width="543">
     <span>
      Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas—an immersive experience blending education and awe.
@@ -86,50 +90,20 @@
     </div>
 </div>
 <div class="explore-matter">
-    <img class="matter-states" alt="matter in all states" src="assets/images/matter-states.png" height="446" width="1440">
+    <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268" width="834">
     <button class="button" id="explore-matters">
         Explore matters
     </button>
 </div>
 <footer>
     <div class="contact">
-        <h2>Contact</h2>
+        <h2>Contact:</h2>
         <p>contact@mattermuseum.com</p>
+        <p>+47 900 50 420</p>
+        <p>(Mon-Fri 10:00-17:00</p>
     </div>
-    <div class="language">
-        <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
-        <img class="no" alt="norwegian" src="assets/logo/NO.png" height="30" width="40">
-    </div>
-    <div class="nav-footer">
-        <input type="checkbox" id="menu-checkbox-2"/>
-        <label for="menu-checkbox-2" id="menu-label-2">
-            <span class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-        </label>
-        <ul class="main-nav">
-            <li>
-                <a href="#">Exhibition</a>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-            </li>
-            <li>
-                <a href="#">Tickets</a>
-            </li>
-            <li>
-                <a href="#">About us</a>
-            </li>
-        </ul>
-    </div>
-    <div class="phone">
-        <span>+47 900 50 420</span>
-        <span>(Mon-Fri. 10:00-20:00</span>
-    </div>
-    <div class="sign-up">
-        <button class="button" id="sign-up-btn">
-            Sign up to our newsletter
-        </button>
+    <div class="follow-us">
+        <h2>Follow us on social media:</h2>
     </div>
     <div class="so-me">
         <img class="so-me-logo" alt="instagram" src="assets/logo/insta.png" height="30" width="30">
@@ -137,13 +111,44 @@
         <img class="so-me-logo" alt="youtube" src="assets/logo/youtube.png" height="21" width="31">
         <img class="so-me-logo" alt="facebook" src="assets/logo/facebook.png" height="33" width="18">
     </div>
+    <div class="paragraph-footer">
+        <p>
+            Want to get updated on the newest exhibitions and events at the museum?
+        </p>
+    </div>
+    <div class="sign-up">
+        <label for="email-box">Sign up to our newsletter:</label>
+        <div class="email">
+            <input type="text" id="email-box" placeholder="email"/>
+        </div>
+    </div>
+    <div class="footer-links">
+        <div class="first-row">
+            <h2>Facilities</h2>
+            <a href="#">Exhibitions</a>
+            <a href="#">Events</a>
+            <a href="#">Schools</a>
+            <a href="#">Cafe</a>
+        </div>
+        <div class="second-row">
+            <h2>Media</h2>
+            <a href="#">Images</a>
+            <a href="#">Videos</a>
+        </div>
+        <div class="third-row">
+            <h2>Contact</h2>
+            <a href="#">Volunteering</a>
+            <a href="#">Our partners</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+    <div class="language">
+        <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+        <img class="no" alt="norwegian" src="assets/logo/NO.png" height="30" width="40">
+    </div>
     <div class="copyright">
         <span>
-            Copyright © 2023
-            <br>
-            Matter Museum
-            <br>
-            All rights reserved.
+            Copyright © 2023 Matter Museum. All rights reserved.
         </span>
     </div>
 </footer>

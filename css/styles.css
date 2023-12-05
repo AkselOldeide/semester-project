@@ -1,0 +1,124 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    overflow: auto;
+}
+
+body {
+    background: #1E1E1E;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(180deg, #333 51.04%, rgba(51, 51, 51, 0.81) 65.62%, rgba(51, 51, 51, 0.00) 80.21%);
+    width: 100%;
+    height: 108px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 67px;
+    height: 76px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.matter,
+.museum {
+    color: #51D88A;
+    text-shadow: 0 2px 4px #51D88A;
+    font-family: "Audiowide", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.museum {
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -60px;
+    margin-top: 11px;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+.hamburger i {
+    font-size: 40px;
+    right: 22px;
+    top: 22px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.overlay {
+    display: none;
+}
+
+#menu-checkbox:checked ~.overlay {
+    position: absolute;
+    top: 108px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+#menu-checkbox:checked ~ .main-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: center;
+    font-family: "Exo", "sans-serif";
+    font-size: 24px;
+}
+
+.nav:hover {
+    color: #51D88A;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: none;
+}
+
+.follow-us {
+    display: none;
+}
+
+.so-me {
+    display: flex;
+    justify-content: center;
+}
