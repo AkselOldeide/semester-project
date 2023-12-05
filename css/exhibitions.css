@@ -14,7 +14,7 @@ main{
 }
 
 #top-banner{
-    background-image: url(./Assets/Images/banner-image.png);
+    background-image: url(./assets/images/banner-image.png);
     width: 100%;
     height: 130px;
     background-repeat: no-repeat;
