@@ -1,5 +1,138 @@
+:root {
+/*Colors*/
+    --primary:#333333;
+    --secondary: #FF6F61;
+    --text: #ffffff;
+    --accent:#51D88A;
+    --additional:#FFD700;
+    --transparent:rgba(0, 0, 0, 0);
+
+/*Fonts*/
+    --heading:'Montserrat', sans-serif;
+    --heading-large: var(--heading);
+    --flashy-heading:'Exo', sans-serif;
+    --flashy-heading-large:var(--flashy-heading);
+    --links:'Roboto', sans-serif;
+    --paragraphs:'Open Sans', sans-serif;
+}
+
+/* ==========================================================================
+   Button Styling
+   ========================================================================== */
+.button-component{
+    border-radius: 16px;
+    border: 1px solid;
+    background-color:var(--transparent);
+    height: fit-content;
+    font-family: var(--flashy-heading);
+}
+
+/*Button Colors*/
+    /*Yellow*/
+.yellow-button{
+    border:var(--additional) 1px solid;
+    color: var(--additional);
+}
+    /*Red*/
+.red-button{
+    border:var(--secondary) 1px solid;
+    color: var(--secondary);
+}
+    /*Green*/
+.green-button{
+    border:var(--accent) 1px solid;
+    color: var(--accent);
+}
+    /*White*/
+.white-button{
+    border:var(--text) 1px solid;
+    color: var(--text);
+}
+
+/*Animation*/
+.button-component:hover{
+    box-shadow: 0px 0px 10px;
+    text-shadow: 0px 0px 10px;
+    background-color: #33333322;
+    backdrop-filter: blur(2px);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   Main content
+   ========================================================================== */
+
 body{
-    background-image: url(./Assets/Images/cafe.jpg);
+    background: url(./assets/images/cafe-long.png);
     background-repeat: no-repeat ;
-    background-size: contain;
+    background-size:cover;
+    background-position: center ;
+}
+
+main{
+    color: var(--text);
+    text-align: center;
+    margin: 0 20px;
+    font-family: 'Exo';
+}
+
+#cafe-top div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 16px;
+    font-family: 'Exo', sans-serif;
+}
+
+#cafe-top div a{
+    height:fit-content;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#cafe-top h1{
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    font-family: 'Exo', sans-serif;
+}
+
+#see-more-menu{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#cafe-bottom:nth-child(2){
+    font-size: 14px;
+}
+
+.main-text{
+    font-size: 12px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+   /* Tablet
+   ========================================================================== */
+    @media (min-width: 750px){
+        #cafe-top div{
+            justify-content: space-evenly;
+        }
+
+
+
+    }
+   /* Desktop
+   ========================================================================== */
+   @media (min-width: 1300px){
+    body{
+        background-image: url(./assets/images/cafe.png);
+    }
 }
