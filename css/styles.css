@@ -1,3 +1,26 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+:root {
+    /*Colors*/
+        --primary:#333333;
+        --secondary: #FF6F61;
+        --text: #ffffff;
+        --accent:#51D88A;
+        --additional:#FFD700;
+        --transparent:rgba(0, 0, 0, 0);
+    
+    /*Fonts*/
+        --heading:'Montserrat', sans-serif;
+        --heading-large: var(--heading);
+        --flashy-heading:'Exo', sans-serif;
+        --flashy-heading-large:var(--flashy-heading);
+        --links:'Roboto', sans-serif;
+        --paragraphs:'Open Sans', sans-serif;
+    }
+    
+
 * {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
