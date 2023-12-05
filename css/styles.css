@@ -1,3 +1,26 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+:root {
+    /*Colors*/
+        --primary:#333333;
+        --secondary: #FF6F61;
+        --text: #ffffff;
+        --accent:#51D88A;
+        --additional:#FFD700;
+        --transparent:rgba(0, 0, 0, 0);
+    
+    /*Fonts*/
+        --heading:'Montserrat', sans-serif;
+        --heading-large: var(--heading);
+        --flashy-heading:'Exo', sans-serif;
+        --flashy-heading-large:var(--flashy-heading);
+        --links:'Roboto', sans-serif;
+        --paragraphs:'Open Sans', sans-serif;
+    }
+    
+
 * {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -11,6 +34,8 @@
     margin: 0;
     overflow: auto;
 }
+
+
 
 body {
     background: #1E1E1E;
@@ -168,4 +193,47 @@ footer {
 
 #sign-up-btn {
     grid-area: btn;
+}
+
+/* ==========================================================================
+   Button Styling
+   ========================================================================== */
+   .button-component{
+    border-radius: 16px;
+    border: 1px solid;
+    background-color:var(--transparent);
+    height: fit-content;
+    font-family: var(--flashy-heading);
+}
+
+/*Button Colors*/
+    /*Yellow*/
+.yellow-button{
+    border:var(--additional) 1px solid;
+    color: var(--additional);
+}
+    /*Red*/
+.red-button{
+    border:var(--secondary) 1px solid;
+    color: var(--secondary);
+}
+    /*Green*/
+.green-button{
+    border:var(--accent) 1px solid;
+    color: var(--accent);
+}
+    /*White*/
+.white-button{
+    border:var(--text) 1px solid;
+    color: var(--text);
+}
+
+/*Animation*/
+.button-component:hover{
+    box-shadow: 0px 0px 10px;
+    text-shadow: 0px 0px 10px;
+    background-color: #33333322;
+    backdrop-filter: blur(2px);
+    transition-duration: 200ms;
+    cursor: pointer;
 }
