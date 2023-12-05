@@ -110,6 +110,10 @@ header {
     backdrop-filter: blur(5px);
 }
 
+.main-nav {
+    padding: 0;
+}
+
 #menu-checkbox:checked ~ .main-nav {
     display: flex;
     flex-direction: column;
@@ -167,6 +171,7 @@ footer {
     font-size: 12px;
 }
 
+
 .sign-up {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,6 +186,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+.sign-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'sign-up sign-up'
+    'box btn';
 }
 
 .label-email {
@@ -188,11 +202,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 72px;
+}
+
+#email-box {
+    grid-area: box;
+    margin-left: 72px;
 }
 
 #sign-up-btn {
     grid-area: btn;
     margin: 8px;
+
 }
 
 /* ==========================================================================
