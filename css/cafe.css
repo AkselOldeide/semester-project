@@ -134,5 +134,7 @@ main{
    @media (min-width: 1300px){
     body{
         background-image: url(./assets/images/cafe.png);
+        margin-left: 250px;
+        margin-right: 250px;
     }
 }
