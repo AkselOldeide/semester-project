@@ -353,6 +353,10 @@ footer {
     font-size: 12px;
 }
 
+#copyright-hidden {
+    display: none;
+}
+
 @media (min-width: 834px) {
 
     .title-and-slogan {
@@ -511,5 +515,51 @@ footer {
 
     .copyright span {
         width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    footer {
+        grid-template-columns: 1.5fr 2fr 1.3fr;
+        grid-template-rows: 1fr 0.2fr 1fr;
+        grid-template-areas:
+        'contact links lang'
+        'what what paragraph'
+        'so-me copyright sign-up'
+    }
+
+    .copyright,
+    .footer-links {
+        padding: 0;
+    }
+
+    .paragraph-footer,
+    .sign-up {
+        padding-left: 40px;
+    }
+
+    .so-me,
+    .sign-up,
+    .copyright {
+        justify-content: flex-start;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #copyright-header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #copyright-hidden {
+        display: flex;
+        text-align: center;
     }
 }
