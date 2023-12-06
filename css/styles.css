@@ -416,7 +416,7 @@ footer {
 
     footer {
         display: grid;
-        grid-template-columns: 1.5fr 1fr 2fr;
+        grid-template-columns: 2fr 0.5fr 2fr;
         grid-template-rows: 2fr 0.5fr 1.5fr 0.5fr;
         grid-template-areas:
         'contact contact links'
