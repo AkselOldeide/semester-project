@@ -94,19 +94,25 @@ header {
     height: 108px;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .logo {
     width: 67px;
     height: 76px;
     margin-left: 8px;
+}
+
+.title-and-slogan {
+    display: flex;
+    flex-shrink: 0;
 }
 
 .matter,
@@ -125,9 +131,12 @@ header {
 .title {
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: -140px;
     justify-content: center;
+    margin-left: 20px;
+}
+
+.slogan {
+    display: none;
 }
 
 #menu-checkbox {
@@ -184,6 +193,10 @@ header {
     color: #51D88A;
 }
 
+.display-nav {
+    display: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -202,6 +215,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px 96px;
+}
+
+.so-me-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .paragraph-footer {
@@ -329,4 +349,167 @@ footer {
     width: 200px;
     text-align: center;
     padding-bottom: 20px;
+    font-family: var(--paragraphs);
+    font-size: 12px;
+}
+
+@media (min-width: 834px) {
+
+    .title-and-slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .slogan {
+        display: flex;
+        padding-left: 20px;
+    }
+
+    .slogan p {
+        font-family: var(--flashy-heading);
+        font-size: 16px;
+    }
+
+    #matters {
+        color: var(--accent);
+        padding-left: 4px;
+        text-decoration: underline;
+    }
+
+    .title {
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .display-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+    }
+
+    .display-nav li {
+        padding: 10px;
+    }
+
+    .display-nav a {
+        font-family: var(--flashy-heading);
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .display-nav a:hover {
+        color: var(--accent);
+        text-shadow: 0 0 10px;
+    }
+
+    /*footer*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 2fr;
+        grid-template-rows: 2fr 0.5fr 1.5fr 0.5fr;
+        grid-template-areas:
+        'contact contact links'
+        'what what paragraph'
+        'so-me lang sign-up'
+        'copyright copyright copyright';
+    }
+
+    .contact {
+        grid-area: contact;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .contact h2 {
+        font-family: var(--paragraphs);
+        font-size: 20px;
+    }
+
+    .contact p {
+        font-family: var(--paragraphs);
+    }
+
+    #phone {
+        padding-top: 16px;
+    }
+
+    .footer-links {
+        grid-area: links;
+    }
+
+    .so-me {
+        grid-area: so-me;
+    }
+
+    .paragraph-footer {
+        grid-area: paragraph;
+        text-align: start;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 60px;
+    }
+
+    .so-me {
+        grid-area: so-me;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .follow-us h2 {
+        font-family: var(--heading);
+        font-size: 20px;
+    }
+
+    .so-me-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-top: 16px;
+    }
+
+    .language {
+        grid-area: lang;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up {
+        grid-area: sign-up;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 60px;
+    }
+
+    .copyright {
+        grid-area: copyright;
+        display: flex;
+        width: 100%;
+    }
+
+    .copyright span {
+        width: 100%;
+    }
 }
