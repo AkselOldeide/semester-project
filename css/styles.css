@@ -161,6 +161,7 @@ header {
 
 .overlay {
     display: none;
+    z-index: 4;
 }
 
 #menu-checkbox:checked ~ .overlay {
