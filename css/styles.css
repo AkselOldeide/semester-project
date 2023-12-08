@@ -95,7 +95,7 @@ header {
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    z-index: 3;
 }
 
 .logo-container {
@@ -142,6 +142,12 @@ header {
 
 #menu-checkbox {
     display: none;
+    z-index: 7;
+}
+
+.hamburger {
+    cursor: pointer;
+    z-index: 5;
 }
 
 .hamburger i {
@@ -150,6 +156,7 @@ header {
     top: 32px;
     overflow: hidden;
     position: absolute;
+    z-index: 5;
 }
 
 .overlay {
