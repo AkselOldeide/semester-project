@@ -1,24 +1,31 @@
-body {
-    display: grid;
-}
-
 .contents {
     position: absolute;
-    top: 60px;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
     width: 100%;
 }
 
 .hero-banner {
-    position: relative;
-    top: 0;
     width: 100%;
     height: 348px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+}
+
+.overlay-pic-1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .pic-1 {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: 0 -100px;
 }
@@ -30,9 +37,104 @@ body {
     font-family: var(--heading);
     font-size: 12px;
     text-align: center;
+    z-index: 2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .yellow-button {
+    pointer-events: auto;
     position: absolute;
     top: 280px;
+    z-index: 4;
+}
+
+.matters h1 {
+    width: 100%;
+    font-family: var(--flashy-heading);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.state-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.state p {
+    font-family: var(--heading);
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.four-states {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.ticket-price,
+.opening-time,
+.location {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.ticket-price {
+    background: url("../assets/images/ticket-booth-1.jpeg") center/cover no-repeat;
+}
+
+.opening-time {
+    background: url(../assets/images/museum-time-1.jpeg) center/cover no-repeat;
+}
+
+.location {
+    background: url(../assets/images/museum-1-1.jpeg) center/cover no-repeat;
+}
+
+.overlay-info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.info-text {
+    font-family: var(--heading);
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
