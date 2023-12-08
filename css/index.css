@@ -1,0 +1,20 @@
+body {
+    display: grid;
+}
+
+.hero-banner {
+    position: relative;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.pic-1 {
+    width: 100%;
+    object-fit: cover;
+}
+
+.matters {
+    position: relative;
+    top: 0;
+}
