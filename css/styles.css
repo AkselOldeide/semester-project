@@ -95,6 +95,7 @@ header {
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
+    position: absolute;
 }
 
 .logo-container {
@@ -200,6 +201,7 @@ header {
 footer {
     display: flex;
     flex-direction: column;
+    background: #1E1E1E;
 }
 
 .contact {
@@ -343,6 +345,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    overflow: hidden;
 }
 
 .copyright span {
