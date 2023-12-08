@@ -12,6 +12,7 @@ body {
 .pic-1 {
     width: 100%;
     object-fit: cover;
+    object-position: 0 -100px;
 }
 
 .matters {
