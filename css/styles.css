@@ -331,7 +331,7 @@ footer {
     backdrop-filter: blur(2px);
     transition-duration: 200ms;
     cursor: pointer;
-
+}
 
 .third-row {
     align-items: flex-end;
@@ -379,6 +379,10 @@ footer {
 #copyright-hidden {
     display: none;
 }
+
+/* ==========================================================================
+    Breakpoint tablet
+   ========================================================================== */
 
 @media (min-width: 834px) {
 
