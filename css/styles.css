@@ -204,6 +204,7 @@ footer {
     background-color:var(--transparent);
     height: fit-content;
     font-family: var(--flashy-heading);
+    margin:5px;
 }
 
 /*Button Colors*/
@@ -224,13 +225,17 @@ footer {
 }
     /*White*/
 .white-button{
+
     border:var(--text) 1px solid;
     color: var(--text);
+    box-shadow: 0px 0px 10px var(--text);
+    text-shadow: 0px 0px 10px;
 }
 
 /*Animation*/
 .button-component:hover{
-    box-shadow: 0px 0px 10px;
+    border-radius: 16px;
+    box-shadow:0px 0px 3px;
     text-shadow: 0px 0px 10px;
     background-color: #33333322;
     backdrop-filter: blur(2px);
