@@ -12,21 +12,28 @@
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    <a href="#">
+    <a href="#" class="logo-container">
         <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
     </a>
-    <div class="title">
-        <span class="matter">
-        Matter
-    </span>
-        <span class="museum">
-        Museum
-    </span>
+    <div class="title-and-slogan">
+        <div class="title">
+            <span class="matter">
+                Matter
+            </span>
+            <span class="museum">
+             Museum
+            </span>
+        </div>
+        <div class="slogan">
+            <p>- Because science</p>
+            <p id="matters">matters</p>
+        </div>
     </div>
     <div class="nav">
         <input type="checkbox" id="menu-checkbox"/>
@@ -52,6 +59,20 @@
             </ul>
         </div>
     </div>
+    <ul class="display-nav">
+        <li>
+            <a class="dis-nav" href="#">Exhibition</a>
+        </li>
+        <li>
+            <a class="dis-nav" href="#">Gallery</a>
+        </li>
+        <li>
+            <a class="dis-nav" href="#">Tickets</a>
+        </li>
+        <li>
+            <a class="dis-nav" href="#">About us</a>
+        </li>
+    </ul>
 </header>
 
 <div class="hero-banner">
@@ -99,17 +120,19 @@
     <div class="contact">
         <h2>Contact:</h2>
         <p>contact@mattermuseum.com</p>
-        <p>+47 900 50 420</p>
-        <p>(Mon-Fri 10:00-17:00</p>
-    </div>
-    <div class="follow-us">
-        <h2>Follow us on social media:</h2>
+        <p id="phone">+47 900 50 420</p>
+        <p>(Mon-Fri 10:00-17:00)</p>
     </div>
     <div class="so-me">
-        <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
-        <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
-        <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
-        <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+        <div class="follow-us">
+            <h2>Follow us on social media:</h2>
+        </div>
+        <div class="so-me-container">
+            <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+            <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+            <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+            <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+        </div>
     </div>
     <div class="paragraph-footer">
         <div class="paragraph-container">
@@ -122,10 +145,10 @@
         <label class="label-email" for="email-box">Sign up to our newsletter:</label>
         <div class="email">
             <input type="text" id="email-box" placeholder="email"/>
+            <button type="button" class="button-component green-button" id="sign-up-btn">
+                Sign up
+            </button>
         </div>
-        <button type="button" class="btn" id="sign-up-btn">
-            Sign up
-        </button>
     </div>
     <div class="footer-links">
         <div class="first-row">
@@ -149,14 +172,16 @@
     </div>
     <div class="language">
         <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
-        <img class="no" alt="norwegian" src="assets/logo/NO.png" height="30" width="40">
+        <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
     </div>
     <div class="copyright">
-        <span>
+        <span id="copyright-header">
             Copyright © 2023 Matter Museum. All rights reserved.
+        </span>
+        <span id="copyright-hidden">
+            The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
         </span>
     </div>
 </footer>
 </body>
 </html>
-
