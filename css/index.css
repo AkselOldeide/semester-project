@@ -7,6 +7,9 @@ body {
     top: 0;
     z-index: -1;
     width: 100%;
+    height: 348px;
+    display: flex;
+    justify-content: center;
 }
 
 .pic-1 {
@@ -15,7 +18,16 @@ body {
     object-position: 0 -100px;
 }
 
-.matters {
-    position: relative;
-    top: 0;
+.hero-banner span {
+    width: 70%;
+    position: absolute;
+    top: 170px;
+    font-family: var(--heading);
+    font-size: 12px;
+    text-align: center;
+}
+
+.yellow-button {
+    position: absolute;
+    top: 280px;
 }
