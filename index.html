@@ -106,20 +106,60 @@
                 <p>gas</p>
             </div>
             <div class="state">
-                <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208" width="208">
+                <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
+                     width="208">
                 <p>plasma</p>
             </div>
         </div>
     </div>
     <div class="info">
+        <input type="checkbox" id="ticket-checkbox"/>
         <div class="ticket-price">
             <div class="overlay-info">
+            <label for="ticket-checkbox" id="ticket-label">
                 <span class="info-text">TICKET PRICE</span>
+            </label>
             </div>
         </div>
+        <div class="ticket-price-popup">
+            <div class="close">
+                <input type="checkbox" id="close-btn">
+                <label for="close-btn" id="close-label">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <div class="list">
+                <div class="child-price">
+                    <h2>Child</h2>
+                    <p>(4-17)</p>
+                </div>
+                <div class="adult-price">
+                    <h2>Adult</h2>
+                    <p>(18 and over)</p>
+                </div>
+                <div class="student-price">
+                    <h2>Students</h2>
+                </div>
+            </div>
+            <div class="price">
+                <h2>70 NOK</h2>
+                <h2>170 NOK</h2>
+                <h2>75 NOK</h2>
+            </div>
+            <div class="buy-now-btn">
+                <button class="white-button button-component">
+                    <a href="#">
+                        Buy Tickets
+                    </a>
+                </button>
+            </div>
+        </div>
+        <input type="checkbox" id="time-checkbox"/>
         <div class="opening-time">
             <div class="overlay-info">
+                <label for="time-checkbox" id="time-label">
                 <span class="info-text">OPENING TIME</span>
+                </label>
             </div>
         </div>
         <div class="location">
@@ -129,8 +169,6 @@
         </div>
     </div>
     <div class="explore-matter">
-        <div class="overlay-pic-1">
-        </div>
         <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
              width="834">
         <button class="button" id="explore-matters">
