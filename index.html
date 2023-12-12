@@ -115,65 +115,94 @@
     <div class="info">
         <input type="checkbox" id="ticket-checkbox"/>
         <div class="ticket-price">
-            <div class="overlay-info">
             <label for="ticket-checkbox" id="ticket-label">
-                <span class="info-text">TICKET PRICE</span>
+                <a class="ticket-price-pic">
+                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400" width="400">
+                </a>
             </label>
-            </div>
         </div>
-        <div class="ticket-price-popup">
-            <div class="close">
-                <input type="checkbox" id="close-btn">
-                <label for="close-btn" id="close-label">
-                    <i class="fa-solid fa-xmark"></i>
-                </label>
-            </div>
-            <div class="list">
-                <div class="child-price">
-                    <h2>Child</h2>
-                    <p>(4-17)</p>
+        <div class="popup-container">
+            <div class="ticket-price-popup">
+                <div class="close">
+                    <input type="checkbox" id="close-btn">
+                    <label for="close-btn" id="close-label">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
                 </div>
-                <div class="adult-price">
-                    <h2>Adult</h2>
-                    <p>(18 and over)</p>
+                <div class="list">
+                    <div class="child-price">
+                        <h2>Child</h2>
+                        <p>(4-17)</p>
+                    </div>
+                    <div class="adult-price">
+                        <h2>Adult</h2>
+                        <p>(18 and over)</p>
+                    </div>
+                    <div class="student-price">
+                        <h2>Students</h2>
+                    </div>
                 </div>
-                <div class="student-price">
-                    <h2>Students</h2>
+                <div class="price">
+                    <h2>70 NOK</h2>
+                    <h2>170 NOK</h2>
+                    <h2>75 NOK</h2>
                 </div>
-            </div>
-            <div class="price">
-                <h2>70 NOK</h2>
-                <h2>170 NOK</h2>
-                <h2>75 NOK</h2>
-            </div>
-            <div class="buy-now-btn">
-                <button class="white-button button-component">
-                    <a href="#">
-                        Buy Tickets
-                    </a>
-                </button>
+                <div class="buy-now-btn">
+                    <button class="white-button button-component">
+                        <a href="#">
+                            Buy Tickets
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
         <input type="checkbox" id="time-checkbox"/>
         <div class="opening-time">
-            <div class="overlay-info">
-                <label for="time-checkbox" id="time-label">
-                <span class="info-text">OPENING TIME</span>
-                </label>
+            <label for="time-checkbox" id="time-label">
+                <a href="#">
+                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400" width="400">
+                </a>
+            </label>
+        </div>
+        <div class="time-popup-container">
+            <div class="time-popup">
+                <div class="close">
+                    <input type="checkbox" id="close-btn-2">
+                    <label for="close-btn-2" class="close-label">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </div>
+                <div class="opening-dates">
+                    <h2>
+                        Mon-Fri
+                        Saturday
+                        Sunday
+                    </h2>
+                </div>
+                <div class="opening-time">
+                    <h2>
+                        10:00 - 17:00
+                        12:00 - 18:00
+                        closed
+                    </h2>
+                </div>
             </div>
         </div>
+        <input type="checkbox" id="location-checkbox">
         <div class="location">
-            <div class="overlay-info">
-                <span class="info-text">LOCATION</span>
-            </div>
+            <label for="location-checkbox" id="location-label">
+                <a href="#">
+                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
+                </a>
+            </label>
         </div>
     </div>
     <div class="explore-matter">
-        <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
-             width="834">
-        <button class="button" id="explore-matters">
+        <button class="yellow-button button-component" id="explore-matters">
             Explore matters
         </button>
+        <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
+             width="834">
     </div>
     <footer>
         <div class="contact">

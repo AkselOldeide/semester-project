@@ -89,12 +89,9 @@
 }
 
 .info {
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px;
-    gap: 20px;
-    place-items: center;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
 }
 
 #ticket-checkbox {
@@ -108,52 +105,32 @@
 .ticket-price,
 .opening-time,
 .location {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
-    justify-content: center;
     margin: 20px;
 }
 
-.ticket-price {
-    background: url("../assets/images/ticket-booth-1.jpeg") center/cover no-repeat;
-}
-
-.opening-time {
-    background: url(../assets/images/museum-time-1.jpeg) center/cover no-repeat;
-}
-
-.location {
-    background: url(../assets/images/museum-1-1.jpeg) center/cover no-repeat;
-}
-
-.overlay-info {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
+.img {
     width: 100%;
-}
-
-.info-text {
-    position: relative;
     height: 100%;
-    width: 100%;
-    align-items: center;
-    font-family: var(--heading);
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .ticket-price-popup {
     display: none;
 }
 
-#ticket-checkbox:checked ~.ticket-price-popup {
+.popup-container {
+    display: none;
+}
+
+#ticket-checkbox:checked ~.popup-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-price-popup {
     display: grid;
     position: absolute;
     background-color: rgba(51, 51, 51, 0.7);
@@ -179,10 +156,7 @@
     padding-top: 20px;
     padding-right: 20px;
     font-size: 30px;
-}
-
-#close-btn {
-    display: none;
+    overflow: hidden;
 }
 
 .list {
@@ -219,14 +193,55 @@
     font-size: 14px;
 }
 
+#close-btn {
+    display: none;
+}
+
 #close-label {
     cursor: pointer;
 }
 
-#close-btn:checked ~.ticket-price-popup {
+#close-btn:checked ~.popup-container {
     display: none;
 }
 
 #time-checkbox {
     display: none;
 }
+
+.time-popup-container {
+    display: none;
+}
+
+#time-checkbox:checked ~.time-popup {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-checkbox {
+    display: none;
+}
+
+.explore-matter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+}
+
+.matter-states {
+    width: 100%;
+    object-fit: cover;
+}
+
+#explore-matters {
+    position: relative;
+    z-index: 6;
+    top: 154px;
+    background-color: #1E1E1E;
+}
+
