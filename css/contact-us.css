@@ -1,0 +1,40 @@
+#heading-contact-us{
+    text-align: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+    text-align: center;
+}
+
+#contact-form form input,
+#contact-form form select,
+#contact-form form textarea{
+    background-color: transparent;
+    border: #FFFFFF 1px solid;
+    border-radius: 4px;
+
+}
+
+#contact-form form input,
+#contact-form form select {
+  height: 34px;
+}
+
+hr{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+#submit-button {
+    margin-left: auto;
+    margin-right: auto;
+}
