@@ -321,26 +321,6 @@ footer {
     align-items: center;
 }
 
-    /*White*/
-.white-button{
-
-    border:var(--text) 1px solid;
-    color: var(--text);
-    box-shadow: 0px 0px 10px var(--text);
-    text-shadow: 0px 0px 10px;
-}
-
-/*Animation*/
-.button-component:hover{
-    border-radius: 16px;
-    box-shadow:0px 0px 3px;
-    text-shadow: 0px 0px 10px;
-    background-color: #33333322;
-    backdrop-filter: blur(2px);
-    transition-duration: 200ms;
-    cursor: pointer;
-}
-
 .third-row {
     align-items: flex-end;
 }
@@ -511,6 +491,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 20px;
     }
 
     .follow-us h2 {
@@ -559,10 +540,10 @@ footer {
 
     footer {
         grid-template-columns: 1.5fr 2fr 1.3fr;
-        grid-template-rows: 1fr 0.2fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr;
         grid-template-areas:
         'contact links lang'
-        'what what paragraph'
+        'so-me what paragraph'
         'so-me copyright sign-up'
     }
 
