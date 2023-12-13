@@ -2,8 +2,10 @@
    Main content
    ========================================================================== */
 
+@import url(./styles.css);
+
 body{
-    background: url(./assets/images/cafe-long.png);
+    background-image: url(../assets/images/cafe.png);
     background-repeat: no-repeat ;
     background-size:cover;
     background-position: center ;
@@ -13,7 +15,7 @@ main{
     color: var(--text);
     text-align: center;
     margin: 0 20px;
-    font-family: 'Exo';
+    font-family:var(--flashy-heading);
 }
 
 #cafe-top div{
@@ -21,7 +23,7 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     gap: 16px;
-    font-family: 'Exo', sans-serif;
+    font-family:'Exo', sans-serif;
 }
 
 #cafe-top div a{
@@ -35,7 +37,7 @@ main{
     font-size: 24px;
     margin-bottom: 32px;
     margin-top: 16px;
-    font-family: 'Exo', sans-serif;
+    font-family:var(--flashy-heading);
 }
 
 #see-more-menu{
@@ -43,6 +45,10 @@ main{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+#cafe-bottom img{
+    margin: 32px auto;
 }
 
 #cafe-bottom:nth-child(2){
@@ -72,8 +78,18 @@ main{
    ========================================================================== */
    @media (min-width: 1300px){
     body{
-        background-image: url(./assets/images/cafe.png);
-        margin-left: 250px;
-        margin-right: 250px;
+        background-image: url(../assets/images/cafe.png);
+        border-left: 250px;
+        border-right: 250px;
+    }
+
+    #cafe-bottom{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cafe-bottom img{
+        width: 333px;
+        height: 333px;
     }
 }

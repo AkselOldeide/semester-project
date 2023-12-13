@@ -321,6 +321,26 @@ footer {
     align-items: center;
 }
 
+    /*White*/
+.white-button{
+
+    border:var(--text) 1px solid;
+    color: var(--text);
+    box-shadow: 0px 0px 10px var(--text);
+    text-shadow: 0px 0px 10px;
+}
+
+/*Animation*/
+.button-component:hover{
+    border-radius: 16px;
+    box-shadow:0px 0px 3px;
+    text-shadow: 0px 0px 10px;
+    background-color: #33333322;
+    backdrop-filter: blur(2px);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
 .third-row {
     align-items: flex-end;
 }
@@ -367,6 +387,10 @@ footer {
 #copyright-hidden {
     display: none;
 }
+
+/* ==========================================================================
+    Breakpoint tablet
+   ========================================================================== */
 
 @media (min-width: 834px) {
 
@@ -528,6 +552,7 @@ footer {
     .copyright span {
         width: 100%;
     }
+
 }
 
 @media (min-width: 1200px) {

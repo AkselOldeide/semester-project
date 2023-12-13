@@ -1,0 +1,47 @@
+main {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+body {
+    background-image: url("/assets/logo/background-payment.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+#all-done-box {
+    background-color: rgba(165, 169, 169, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 613px;
+    height: 576px;
+    justify-content: space-evenly;
+    margin: auto;
+    border-radius: 16px;
+    border: #FFFFFF 1px solid;
+    font-family: 'Exo', sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+#white-logo {
+    width: 73px;
+    height: 82px;
+}
+
+.mid-text {
+    font-family: var(--heading);
+    font-size: 20px;
+}
+
+#ref-nr {
+    color: var(--secondary);
+}
+@media (min-width: 1200px) {
+ #all-done-box {
+     width: 736px;
+ }
+}
