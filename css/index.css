@@ -1,14 +1,14 @@
 .contents {
-    position: relative;
-    display: grid;
-    top: -70px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
     width: 100%;
 }
 
 .hero-banner {
     width: 100%;
     height: 348px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,29 +94,134 @@
     justify-content: space-between;
 }
 
-.pic {
-    cursor: pointer;
-    overflow: hidden;
-    padding: 20px;
+#ticket-checkbox {
+    display: none;
 }
 
-.container {
+#ticket-label {
+    cursor: pointer;
+}
+
+.ticket-price,
+.opening-time,
+.location {
     display: flex;
-    margin-top: 20px;
-    overflow: hidden;
+    margin: 20px;
 }
 
 .img {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
-.pic {
-    transition: transform 0.5s ease;
+.ticket-price-popup {
+    display: none;
 }
 
-.pic:hover {
-    transform: scale(1.1);
+.popup-container {
+    display: none;
+}
+
+#ticket-checkbox:checked ~.popup-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-price-popup {
+    display: grid;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.7);
+    backdrop-filter: blur(2px);
+    height: 300px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.35fr;
+    grid-template-areas:
+    'close close'
+    'list price'
+    'button button';
+    z-index: 10;
+    border-radius: 16px;
+    border: solid white 2px;
+}
+
+.close {
+    grid-area: close;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.list {
+    font-family: var(--heading);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.price {
+    font-family: var(--heading);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 40px;
+}
+
+.buy-now-btn {
+    grid-area: button;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.white-button {
+    font-size: 14px;
+}
+
+#close-btn {
+    display: none;
+}
+
+#close-label {
+    cursor: pointer;
+}
+
+#close-btn:checked ~.popup-container {
+    display: none;
+}
+
+#time-checkbox {
+    display: none;
+}
+
+.time-popup-container {
+    display: none;
+}
+
+#time-checkbox:checked ~.time-popup {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-checkbox {
+    display: none;
 }
 
 .explore-matter {

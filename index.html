@@ -113,22 +113,88 @@
         </div>
     </div>
     <div class="info">
-        <div class="container">
-            <a class="pic" href="#">
-                <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                     width="400">
-            </a>
+        <input type="checkbox" id="ticket-checkbox"/>
+        <div class="ticket-price">
+            <label for="ticket-checkbox" id="ticket-label">
+                <a class="ticket-price-pic">
+                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400" width="400">
+                </a>
+            </label>
         </div>
-        <div class="container">
-            <a class="pic" href="#">
-                <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                     width="400">
-            </a>
+        <div class="popup-container">
+            <div class="ticket-price-popup">
+                <div class="close">
+                    <input type="checkbox" id="close-btn">
+                    <label for="close-btn" id="close-label">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </div>
+                <div class="list">
+                    <div class="child-price">
+                        <h2>Child</h2>
+                        <p>(4-17)</p>
+                    </div>
+                    <div class="adult-price">
+                        <h2>Adult</h2>
+                        <p>(18 and over)</p>
+                    </div>
+                    <div class="student-price">
+                        <h2>Students</h2>
+                    </div>
+                </div>
+                <div class="price">
+                    <h2>70 NOK</h2>
+                    <h2>170 NOK</h2>
+                    <h2>75 NOK</h2>
+                </div>
+                <div class="buy-now-btn">
+                    <button class="white-button button-component">
+                        <a href="#">
+                            Buy Tickets
+                        </a>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <a class="pic" href="#">
-                <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-            </a>
+        <input type="checkbox" id="time-checkbox"/>
+        <div class="opening-time">
+            <label for="time-checkbox" id="time-label">
+                <a href="#">
+                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400" width="400">
+                </a>
+            </label>
+        </div>
+        <div class="time-popup-container">
+            <div class="time-popup">
+                <div class="close">
+                    <input type="checkbox" id="close-btn-2">
+                    <label for="close-btn-2" class="close-label">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </div>
+                <div class="opening-dates">
+                    <h2>
+                        Mon-Fri
+                        Saturday
+                        Sunday
+                    </h2>
+                </div>
+                <div class="opening-time">
+                    <h2>
+                        10:00 - 17:00
+                        12:00 - 18:00
+                        closed
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="location-checkbox">
+        <div class="location">
+            <label for="location-checkbox" id="location-label">
+                <a href="#">
+                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
+                </a>
+            </label>
         </div>
     </div>
     <div class="explore-matter">
@@ -138,39 +204,40 @@
         <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
              width="834">
     </div>
-</div>
-<footer>
-    <div class="contact">
-        <h2>Contact:</h2>
-        <p>contact@mattermuseum.com</p>
-        <p id="phone">+47 900 50 420</p>
-        <p>(Mon-Fri 10:00-17:00)</p>
-    </div>
-    <div class="so-me">
-        <div class="follow-us">
-            <h2>Follow us on social media:</h2>
+    <footer>
+        <div class="contact">
+            <h2>Contact:</h2>
+            <p>contact@mattermuseum.com</p>
+            <p id="phone">+47 900 50 420</p>
+            <p>(Mon-Fri 10:00-17:00)</p>
         </div>
-        <div class="so-me-container">
-            <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
-            <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
-            <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
-            <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+        <div class="so-me">
+            <div class="follow-us">
+                <h2>Follow us on social media:</h2>
+            </div>
+            <div class="so-me-container">
+                <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+                <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+                <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+                <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+            </div>
         </div>
-    </div>
-    <div class="paragraph-footer">
-        <div class="paragraph-container">
-            <p>
-                Want to get updated on the newest exhibitions and events at the museum?
-            </p>
+        <div class="paragraph-footer">
+            <div class="paragraph-container">
+                <p>
+                    Want to get updated on the newest exhibitions and events at the museum?
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="sign-up">
-        <label class="label-email" for="email-box">Sign up to our newsletter:</label>
-        <div class="email">
-            <input type="text" id="email-box" placeholder="email"/>
-            <button type="button" class="button-component green-button" id="sign-up-btn">
-                Sign up
-            </button>
+        <div class="sign-up">
+            <label class="label-email" for="email-box">Sign up to our newsletter:</label>
+            <div class="email">
+                <input type="text" id="email-box" placeholder="email"/>
+                <button type="button" class="button-component green-button" id="sign-up-btn">
+                    Sign up
+                </button>
+            </div>
+        </div>
         <div class="footer-links">
             <div class="first-row">
                 <h2>Facilities</h2>
@@ -191,39 +258,19 @@
                 <a href="#">Contact us</a>
             </div>
         </div>
-    </div>
-    <div class="footer-links">
-        <div class="first-row">
-            <h2>Facilities</h2>
-            <a href="#">Exhibitions</a>
-            <a href="#">Events</a>
-            <a href="#">Schools</a>
-            <a href="#">Cafe</a>
+        <div class="language">
+            <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+            <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
         </div>
-        <div class="second-row">
-            <h2>Media</h2>
-            <a href="#">Images</a>
-            <a href="#">Videos</a>
-        </div>
-        <div class="third-row">
-            <h2>Contact</h2>
-            <a href="#">Volunteering</a>
-            <a href="#">Our partners</a>
-            <a href="#">Contact us</a>
-        </div>
-    </div>
-    <div class="language">
-        <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
-        <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
-    </div>
-    <div class="copyright">
+        <div class="copyright">
         <span id="copyright-header">
             Copyright © 2023 Matter Museum. All rights reserved.
         </span>
-        <span id="copyright-hidden">
+            <span id="copyright-hidden">
             The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
         </span>
-    </div>
-</footer>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
