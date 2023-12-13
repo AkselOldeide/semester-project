@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--General meta - for ALL pages-->
+    <!--Stylesheet, Author, View-->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta name="author" content="Aksel, Helene, Panida">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contact-us.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Favico-->
+    <link rel="icon" type="image/png" sizes="180x180" href="favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"/>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+
+<!--Specific meta For THIS page-->
     <title>Contact us</title>
+    <meta name="description" content="Description"/>
+    <link rel="stylesheet" href="css/contact-us.css">
 </head>
 <body>
     <header>
@@ -63,17 +79,17 @@
             <a class="dis-nav" href="./checkout-complete.html">About us</a>
         </li>
     </ul>
-</header>
+    </header>
     <h1 id="heading-contact-us">Contact us</h1>
+    <hr>
     <main>
         <section id="contact-form">
-            <hr>
             <form>
                 <h2>Contact form:</h2>
-                <input type="text" name="" id="" placeholder="Full name">
-                <input type="email" name="" id="" placeholder="Email">
-                <input type="tel" name="" id="" placeholder="Phone">
-                <select>
+                <input type="text" name="name" placeholder="Full name" class="form-content">
+                <input type="email" name="email" placeholder="Email" class="form-content">
+                <input type="tel" name="phone" placeholder="Phone number" class="form-content">
+                <select class="form-content">
                     <option>Lost and found</option>
                     <option> General questions</option>
                     <option>Schools/groups</option>
@@ -81,80 +97,106 @@
                     <option>Guided tours</option>
                     <option>Other inquiries</option>
                 </select>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
-                <button id="submit-button" class="green-button button-component">Submit</button>
-
+                <textarea name="description" id="" cols="30" rows="10" placeholder="Description" class="form-content"></textarea>
+                <input type="submit" class="green-button button-component">
             </form>
         </section>
         <hr>
-        <section></section>
+        <section id="contact-other">
+            <h2>Social Channels:</h2>
+            <p>Feel free to send us a message or tag us at:</p>
+            <div id="social-contact-buttons">
+                <a href="https://www.facebook.com">
+                    <img src="./assets/logo/facebook.png" alt="">
+                </a>                
+                <a href="https://www.youtube.com">
+                    <img src="./assets/logo/youtube.png" alt="">
+                </a>
+                <a href="https://www.x.com">
+                    <img src="./assets/logo/x-logo-2.png" alt="">
+                </a>
+            </div>
+            <article>
+                <h2>Further inquiries:</h2>
+                <div id="phone-and-email"></div>
+                    <div id="phone">
+                        <p class="mini-header">Phone</p>
+                        <p>+47 99 1000 52 <br> (Mon.-Fri: 10:00-20:00) </p>   
+                    </div>
+                    <div id="email">
+                        <p class="mini-header">Email</p>
+                        <p>Contact@science-museum.no</p>
+                    </div>
+            </article>
+        </section>
     </main>
+    <hr id="bottom-split">
     <footer>
-    <div class="contact">
-        <h2>Contact:</h2>
-        <p>contact@mattermuseum.com</p>
-        <p id="phone">+47 900 50 420</p>
-        <p>(Mon-Fri 10:00-17:00)</p>
-    </div>
-    <div class="so-me">
-        <div class="follow-us">
-            <h2>Follow us on social media:</h2>
+        <div class="contact">
+            <h2>Contact:</h2>
+            <p>contact@mattermuseum.com</p>
+            <p id="phone">+47 900 50 420</p>
+            <p>(Mon-Fri 10:00-17:00)</p>
         </div>
-        <div class="so-me-container">
-            <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
-            <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
-            <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
-            <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+        <div class="so-me">
+            <div class="follow-us">
+                <h2>Follow us on social media:</h2>
+            </div>
+            <div class="so-me-container">
+                <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+                <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+                <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+                <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+            </div>
         </div>
-    </div>
-    <div class="paragraph-footer">
-        <div class="paragraph-container">
-            <p>
-                Want to get updated on the newest exhibitions and events at the museum?
-            </p>
+        <div class="paragraph-footer">
+            <div class="paragraph-container">
+                <p>
+                    Want to get updated on the newest exhibitions and events at the museum?
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="sign-up">
-        <label class="label-email" for="email-box">Sign up to our newsletter:</label>
-        <div class="email">
-            <input type="text" id="email-box" placeholder="email"/>
-            <button type="button" class="button-component green-button" id="sign-up-btn">
-                Sign up
-            </button>
+        <div class="sign-up">
+            <label class="label-email" for="email-box">Sign up to our newsletter:</label>
+            <div class="email">
+                <input type="text" id="email-box" placeholder="email"/>
+                <button type="button" class="button-component green-button" id="sign-up-btn">
+                    Sign up
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="footer-links">
-        <div class="first-row">
-            <h2>Facilities</h2>
-            <a href="#">Exhibitions</a>
-            <a href="#">Events</a>
-            <a href="#">Schools</a>
-            <a href="#">Cafe</a>
+        <div class="footer-links">
+            <div class="first-row">
+                <h2>Facilities</h2>
+                <a href="#">Exhibitions</a>
+                <a href="#">Events</a>
+                <a href="#">Schools</a>
+                <a href="#">Cafe</a>
+            </div>
+            <div class="second-row">
+                <h2>Media</h2>
+                <a href="#">Images</a>
+                <a href="#">Videos</a>
+            </div>
+            <div class="third-row">
+                <h2>Contact</h2>
+                <a href="#">Volunteering</a>
+                <a href="./checkout-complete.html">Our partners</a>
+                <a href="#">Contact us</a>
+            </div>
         </div>
-        <div class="second-row">
-            <h2>Media</h2>
-            <a href="#">Images</a>
-            <a href="#">Videos</a>
+        <div class="language">
+            <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+            <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
         </div>
-        <div class="third-row">
-            <h2>Contact</h2>
-            <a href="#">Volunteering</a>
-            <a href="./checkout-complete.html">Our partners</a>
-            <a href="#">Contact us</a>
+        <div class="copyright">
+            <span id="copyright-header">
+                Copyright © 2023 Matter Museum. All rights reserved.
+            </span>
+            <span id="copyright-hidden">
+                The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
+            </span>
         </div>
-    </div>
-    <div class="language">
-        <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
-        <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
-    </div>
-    <div class="copyright">
-        <span id="copyright-header">
-            Copyright © 2023 Matter Museum. All rights reserved.
-        </span>
-        <span id="copyright-hidden">
-            The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
-        </span>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
