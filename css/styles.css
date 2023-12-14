@@ -514,6 +514,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 20px;
     }
 
     .follow-us h2 {
@@ -562,10 +563,10 @@ footer {
 
     footer {
         grid-template-columns: 1.5fr 2fr 1.3fr;
-        grid-template-rows: 1fr 0.2fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr;
         grid-template-areas:
         'contact links lang'
-        'what what paragraph'
+        'so-me what paragraph'
         'so-me copyright sign-up'
     }
 
