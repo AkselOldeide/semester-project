@@ -16,9 +16,9 @@
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<header>
-    <a href="#" class="logo-container">
+<body aria-label="Matter Museum - Because science matter">
+<header aria-label="Header Section">
+    <a href="index.html" class="logo-container" aria-label="Matter Museum Home">
         <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
     </a>
     <div class="title-and-slogan">
@@ -45,37 +45,37 @@
         <div class="overlay">
             <ul class="main-nav">
                 <li>
-                    <a class="nav" href="#">Exhibition</a>
+                    <a class="nav" href="exhibitions.html">Exhibition</a>
                 </li>
                 <li>
                     <a class="nav" href="#">Gallery</a>
                 </li>
                 <li>
-                    <a class="nav" href="#">Tickets</a>
+                    <a class="nav" href="tickets.html">Tickets</a>
                 </li>
                 <li>
-                    <a class="nav" href="#">About us</a>
+                    <a class="nav" href="about-us.html">About us</a>
                 </li>
             </ul>
         </div>
     </div>
     <ul class="display-nav">
         <li>
-            <a class="dis-nav" href="#">Exhibition</a>
+            <a class="dis-nav" href="exhibitions.html">Exhibition</a>
         </li>
         <li>
             <a class="dis-nav" href="#">Gallery</a>
         </li>
         <li>
-            <a class="dis-nav" href="#">Tickets</a>
+            <a class="dis-nav" href="tickets.html">Tickets</a>
         </li>
         <li>
-            <a class="dis-nav" href="#">About us</a>
+            <a class="dis-nav" href="about-us.html">About us</a>
         </li>
     </ul>
 </header>
 
-<div class="contents">
+<div class="contents" aria-label="Main Content">
     <div class="hero-banner">
         <div class="overlay-pic-1">
         </div>
@@ -86,11 +86,11 @@
         </span>
     </div>
     <div class="button-container">
-        <button class="yellow-button button-component">
+        <button class="yellow-button button-component" aria-label="Explore Button">
             Explore
         </button>
     </div>
-    <div class="matters">
+    <div class="matters" aria-label="Four States of Matters Section">
         <h1>4 STATES OF MATTERS</h1>
         <div class="four-states">
             <div class="state">
@@ -112,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="info">
+    <div class="info" aria-label="Information Section">
         <div class="container">
             <a class="pic" href="#">
                 <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
@@ -131,15 +131,15 @@
             </a>
         </div>
     </div>
-    <div class="explore-matter">
-        <button class="yellow-button button-component" id="explore-matters">
+    <div class="explore-matter" aria-label="Explore Matters Section">
+        <button class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
             Explore matters
         </button>
         <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
              width="834">
     </div>
 </div>
-<footer>
+<footer aria-label="Footer Section">
     <div class="contact">
         <h2>Contact:</h2>
         <p>contact@mattermuseum.com</p>
@@ -151,10 +151,18 @@
             <h2>Follow us on social media:</h2>
         </div>
         <div class="so-me-container">
-            <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
-            <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
-            <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
-            <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+            <a href="#">
+                <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+            </a>
+            <a href="#">
+                <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+            </a>
+            <a href="#">
+                <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+            </a>
+            <a href="#">
+                <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+            </a>
         </div>
     </div>
     <div class="paragraph-footer">
@@ -168,7 +176,7 @@
         <label class="label-email" for="email-box">Sign up to our newsletter:</label>
         <div class="email">
             <input type="text" id="email-box" placeholder="email"/>
-            <button type="button" class="button-component green-button" id="sign-up-btn">
+            <button type="button" class="button-component green-button" id="sign-up-btn" aria-label="Sign Up Button">
                 Sign up
             </button>
         </div>
