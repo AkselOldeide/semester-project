@@ -100,8 +100,19 @@ figure{
 
 
 #founders-image img:hover{
-    box-shadow: var(--additional) 0px 0px 40px;
     transition-duration: 300ms;
+}
+
+#founders-image #helene:hover{
+    box-shadow: #ee68c3 0px 0px 40px;
+}
+
+#founders-image #aksel:hover{
+    box-shadow: var(--additional) 0px 0px 40px;
+}
+
+#founders-image #panida:hover{
+    box-shadow: #5e0101 0px 0px 40px;
 }
 
 @media (max-width: 833px){
