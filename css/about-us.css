@@ -1,0 +1,130 @@
+main{
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    font-family: var(--flashy-heading);
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#founders-image{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/assets/logo/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 40vw;
+    width: 40vw;
+    overflow:visible;
+    margin-bottom: 202px;
+}
+
+#founders-image img{
+    max-width: 10vw;
+    max-height: 10vw;
+    position: relative;
+    border-radius: 100%;
+}
+
+#founders-image div{
+    overflow: visible;
+    position: relative;
+}
+
+/*Aksel*/
+
+#aksel{
+    top: 15%;
+}
+
+#nametag-aksel{
+    right: 150%;
+}
+
+#aksel:hover ~ #nametag-aksel{
+    display: flex;
+}
+
+/*Helene*/
+
+
+#helene{
+    top: 83%;
+}
+
+#nametag-helene{
+    top: 120%;
+    text-align: center;
+}
+
+#helene:hover ~ #nametag-helene{
+    display: flex;
+}
+
+/*Panida*/
+
+#panida{
+    top: 15%;
+}
+
+#nametag-panida{
+    left: 150%;
+}
+
+#panida:hover ~ #nametag-panida{
+    display: flex;
+}
+
+/*Nametag*/
+
+.nametag{
+    display: none;
+    position:absolute;
+    color: white;
+    font-family: var(--flashy-heading);
+    text-shadow: var(--additional) 0px 0px 10px;
+    transition-duration: 300ms;
+    animation-duration: 200ms;
+}
+
+
+
+#founders-image img:hover{
+    box-shadow: var(--additional) 0px 0px 40px;
+    transition-duration: 300ms;
+}
+
+@media (max-width: 833px){
+    #founders-image{
+        height: 80vw;
+        width: 80vw;
+    }
+    
+    #founders-image img{
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+    
+    #aksel{
+        left: 0px;
+        top: 15%;
+    }
+    
+    #helene{
+        top: 83%;
+    }
+    
+    #panida{
+        top: 15%;
+    }
+}
