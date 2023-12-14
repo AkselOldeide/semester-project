@@ -1,0 +1,149 @@
+.payment-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-header {
+    font-family: var(--flashy-heading);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.payment-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.payment-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(9, auto);
+    width: 70%;
+    margin-bottom: 40px;
+    grid-gap: 10px;
+    grid-template-areas:
+    'name last-name'
+    'card-number card-number'
+    'expiry cvv'
+    'phone phone1'
+    'address address'
+    'city country'
+    'zip zip1'
+    'radio-1 radio-1'
+    'radio-2 radio-2'
+    'buttons buttons';
+}
+
+.name-div {
+    grid-area: name;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-name-div{
+    grid-area: last-name;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-number-div {
+    grid-area: card-number;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expiry-div {
+    grid-area: expiry;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvv-div {
+    grid-area: cvv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-div {
+    grid-area: phone;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-div {
+    grid-area: address;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-div {
+    grid-area: city;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-div {
+    grid-area: country;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zip-div {
+    grid-area: zip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    display: flex;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 4px;
+    height: 30px;
+    /*padding-left: 16px;*/
+    width: 100%;
+    font-family: var(--flashy-heading);
+}
+
+.form-content:focus {
+    outline: none;
+}
+
+.radio-container-1 {
+    grid-area: radio-1;
+    padding-top: 20px;
+}
+
+.radio-container-2 {
+    grid-area: radio-2;
+}
+
+.radio-label {
+    font-family: var(--heading);
+    font-size: 14px;
+}
+
+.buttons-container {
+    grid-area: buttons;
+    display: flex;
+    width: 100%;
+    overflow: visible;
+    padding-top: 20px;
+    justify-content: space-between;
+}

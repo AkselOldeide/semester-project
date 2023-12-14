@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta name="author" content="Aksel, Helene, Panida">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="180x180" href="favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"/>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+
+    <!--Specific meta For THIS page-->
+    <title>Payment</title>
+    <meta name="description" content="Description"/>
+    <link rel="stylesheet" href="css/payment.css"/>
+</head>
+
+<body>
+<header>
+  <a href="#" class="logo-container">
+    <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
+  </a>
+  <div class="title-and-slogan">
+    <div class="title">
+            <span class="matter">
+                Matter
+            </span>
+      <span class="museum">
+             Museum
+            </span>
+    </div>
+    <div class="slogan">
+      <p>- Because science</p>
+      <p id="matters">matters</p>
+    </div>
+  </div>
+  <div class="nav">
+    <input type="checkbox" id="menu-checkbox"/>
+    <label for="menu-checkbox" id="menu-label">
+            <span class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+    </label>
+    <div class="overlay">
+      <ul class="main-nav">
+        <li>
+          <a class="nav" href="#">Exhibition</a>
+        </li>
+        <li>
+          <a class="nav" href="#">Gallery</a>
+        </li>
+        <li>
+          <a class="nav" href="#">Tickets</a>
+        </li>
+        <li>
+          <a class="nav" href="#">About us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul class="display-nav">
+    <li>
+      <a class="dis-nav" href="#">Exhibition</a>
+    </li>
+    <li>
+      <a class="dis-nav" href="#">Gallery</a>
+    </li>
+    <li>
+      <a class="dis-nav" href="#">Tickets</a>
+    </li>
+    <li>
+      <a class="dis-nav" href="#">About us</a>
+    </li>
+  </ul>
+</header>
+
+<div class="content">
+  <div class="payment-flex">
+    <h1 class="payment-header">PAYMENT</h1>
+    <div class="payment-container">
+      <div class="name-div">
+        <label for="name"></label>
+        <input type="text" class="form-content" id="name" name="name" placeholder="First name" required>
+      </div>
+      <div class="last-name-div">
+        <label for="last-name"></label>
+        <input type="text" class="form-content" id="last-name" name="last-name" placeholder="Last name" required>
+      </div>
+      <div class="card-number-div">
+        <label for="card-number"></label>
+        <input type="text" class="form-content" id="card-number" name="card-number" placeholder="Card number" required>
+      </div>
+      <div class="expiry-div">
+        <label for="expiry"></label>
+        <input type="text" class="form-content" id="expiry" name="expiry" placeholder="Expiry date mm/yy" required>
+      </div>
+      <div class="cvv-div">
+        <label for="cvv"></label>
+        <input type="text" class="form-content" id="cvv" name="cvv" placeholder="cvv" required>
+      </div>
+      <div class="phone-div">
+        <label for="phone-number"></label>
+        <input type="text" class="form-content" id="phone-number" name="phone" placeholder="Phone number" required>
+      </div>
+      <div class="address-div">
+        <label for="address"></label>
+        <input type="text" class="form-content" id="address" name="address" placeholder="Address" required>
+      </div>
+      <div class="city-div">
+        <label for="city"></label>
+        <input type="text" class="form-content" id="city" name="city" placeholder="City" required>
+      </div>
+      <div class="country-div">
+        <label for="country"></label>
+        <input type="text" class="form-content" id="country" name=country" placeholder="Country" required>
+      </div>
+      <div class="zip-div">
+        <label for="zip"></label>
+        <input type="text" class="form-content" id="zip" name="zip" placeholder="Zip code" required>
+      </div>
+      <div class="radio-container-1">
+        <input type="radio" id="news" name="news-letters-acceptance" class="radio-input" value="yes">
+        <label for="news" class="news-letter-radio">
+          <span class="radio-label">I agree to receive newsletters</span>
+        </label>
+      </div>
+      <div class="radio-container-2">
+        <input type="radio" id="read" name="have-read-policy" class="radio-input" value="yes">
+        <label for="read" class="read-radio">
+                <span class="radio-label">I have read, understood and accepted the
+                    <a href="#">
+                        policy
+                    </a>
+                </span>
+        </label>
+      </div>
+      <div class="buttons-container">
+        <button type="button" class="yellow-button button-component">
+          < Back
+        </button>
+        <button type="button" class="yellow-button button-component">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contact">
+    <h2>Contact:</h2>
+    <p>contact@mattermuseum.com</p>
+    <p id="phone">+47 900 50 420</p>
+    <p>(Mon-Fri 10:00-17:00)</p>
+  </div>
+  <div class="so-me">
+    <div class="follow-us">
+      <h2>Follow us on social media:</h2>
+    </div>
+    <div class="so-me-container">
+      <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+      <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+      <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+      <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+    </div>
+  </div>
+  <div class="paragraph-footer">
+    <div class="paragraph-container">
+      <p>
+        Want to get updated on the newest exhibitions and events at the museum?
+      </p>
+    </div>
+  </div>
+  <div class="sign-up">
+    <label class="label-email" for="email-box">Sign up to our newsletter:</label>
+    <div class="email">
+      <input type="text" id="email-box" placeholder="email"/>
+      <button type="button" class="button-component green-button" id="sign-up-btn">
+        Sign up
+      </button>
+    </div>
+  </div>
+  <div class="footer-links">
+    <div class="first-row">
+      <h2>Facilities</h2>
+      <a href="#">Exhibitions</a>
+      <a href="#">Events</a>
+      <a href="#">Schools</a>
+      <a href="#">Cafe</a>
+    </div>
+    <div class="second-row">
+      <h2>Media</h2>
+      <a href="#">Images</a>
+      <a href="#">Videos</a>
+    </div>
+    <div class="third-row">
+      <h2>Contact</h2>
+      <a href="#">Volunteering</a>
+      <a href="#">Our partners</a>
+      <a href="#">Contact us</a>
+    </div>
+  </div>
+  <div class="language">
+    <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+    <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
+  </div>
+  <div class="copyright">
+        <span id="copyright-header">
+            Copyright © 2023 Matter Museum. All rights reserved.
+        </span>
+    <span id="copyright-hidden">
+            The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
+        </span>
+  </div>
+</footer>
+
+</body>
