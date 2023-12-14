@@ -361,8 +361,16 @@ footer {
 .third-row a {
     font-family: var(--links);
     font-size: 14px;
+    overflow: visible;
 }
 
+.first-row a:hover,
+.second-row a:hover,
+.third-row a:hover {
+    overflow: visible;
+    color: #51D88A;
+    text-shadow: #51D88A 0px 0px 10px;
+}
 .language {
     display: flex;
     justify-content: center;
