@@ -126,6 +126,7 @@
     justify-content: center;
     overflow: hidden;
     height: auto;
+
 }
 
 .matter-states {
@@ -137,5 +138,6 @@
     position: relative;
     z-index: 6;
     top: 154px;
+    padding: 4px 6px;
     background-color: #1E1E1E;
 }

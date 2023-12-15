@@ -8,7 +8,7 @@
     --secondary: #FF6F61;
     --text: #ffffff;
     --accent: #51D88A;
-    --additional: #FFD700;
+    --additional: #ffd700;
     --transparent: rgba(0, 0, 0, 0);
 
     /*Fonts*/
@@ -235,6 +235,25 @@ footer {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
+}
+
+.so-me-container a{
+    overflow:visible;
+    background-color: transparent;
+}
+
+#ig-icon-footer:hover, 
+#yt-icon-footer:hover, 
+#fb-icon-footer:hover, 
+#tt-icon-footer:hover{
+    filter: opacity(0.85) drop-shadow(0 0 10px var(--accent));
+    transition-duration: 200ms;
+    overflow: visible;
+}
+
+.so-me-icon:hover{
+    transform: scale(1.2);
 }
 
 .paragraph-footer {
@@ -361,8 +380,16 @@ footer {
 .third-row a {
     font-family: var(--links);
     font-size: 14px;
+    overflow: visible;
 }
 
+.first-row a:hover,
+.second-row a:hover,
+.third-row a:hover {
+    overflow: visible;
+    color: #51D88A;
+    text-shadow: #51D88A 0px 0px 10px;
+}
 .language {
     display: flex;
     justify-content: center;
