@@ -126,7 +126,6 @@
     justify-content: center;
     overflow: hidden;
     height: auto;
-
 }
 
 .matter-states {
@@ -151,5 +150,24 @@
     }
     .hero-banner span {
         font-size: 16px;
+    }
+}
+=======
+    background-color: #1E1E1E;
+}
+
+@media (min-width: 834px) {
+    .hero-banner span {
+        font-size: 16px;
+    }
+
+    .pic-1 {
+        object-position: 0 -150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pic-1 {
+        object-position: 0 -310px;
     }
 }
