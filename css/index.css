@@ -131,13 +131,24 @@
 
 .matter-states {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 #explore-matters {
     position: relative;
     z-index: 6;
-    top: 154px;
+    top: 50%;
     padding: 4px 6px;
     background-color: #1E1E1E;
+}
+
+
+@media (min-width: 834px) {
+    .pic-1 {
+        object-position: 0 -200px;
+    }
+    .hero-banner span {
+        font-size: 16px;
+    }
 }
