@@ -45,3 +45,25 @@ body {
      width: 736px;
  }
 }
+
+@media (max-width: 800px) {
+    #all-done-box {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 500px;
+    }
+   }
+
+   @media (max-width: 600px) {
+    #all-done-box {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 300px;
+        width: auto;
+    }
+
+    main{
+        margin-top: 48px;
+        margin-bottom: 32px;
+    }
+   }
