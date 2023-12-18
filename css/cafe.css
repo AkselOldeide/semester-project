@@ -2,8 +2,6 @@
    Main content
    ========================================================================== */
 
-@import url(./styles.css);
-
 body{
     background-image: url(../assets/images/cafe.png);
     background-repeat: no-repeat ;
@@ -47,9 +45,6 @@ main{
     line-height: normal;
 }
 
-#cafe-bottom img{
-    margin: 32px auto;
-}
 
 #cafe-bottom:nth-child(2){
     font-size: 14px;
@@ -57,6 +52,32 @@ main{
 
 .main-text{
     font-size: 12px;
+}
+
+#text-bottom-coffee{
+    max-width: 100%;
+}
+
+#text-bottom-coffee:first-child{
+    font-size: 20px;
+}
+
+#cafe-bottom, #cafe-top{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-text{
+    margin-top: 16px;
+}
+
+#cafe-top{
+    margin-bottom: 32px;
+}
+
+#cafe-bottom{
+    margin-bottom: 30px;
+    gap: 16px;
 }
 
 /* ==========================================================================
@@ -70,8 +91,36 @@ main{
         #cafe-top div{
             justify-content: space-evenly;
         }
+    
+        #text-bottom-coffee{
+            max-width: 50%;
+        }
+
+        #cafe-bottom img{
+            max-width: 50%;
+        }
+
+        #cafe-bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+        }
+
+        #cafe-top h1{
+            font-size: 32px;
+        }
+
+        #brewlab-header{
+            font-size: 20px;
+        }
+
+        .main-text{
+            font-size: 14px;
+        }
+
     }
-   /* Desktop
+    /* Desktop
    ========================================================================== */
    @media (min-width: 1300px){
     body{
@@ -80,13 +129,26 @@ main{
         border-right: 250px;
     }
 
-    #cafe-bottom{
-        display: flex;
-        flex-direction: row;
-    }
-
     #cafe-bottom img{
         width: 333px;
         height: 333px;
     }
-}
+
+    main{
+        margin-bottom: 10px;
+    }
+
+    #brewlab-header{
+        font-size: 20px;
+    }
+
+    .main-text{
+        font-size: 16px;
+    }
+
+    #cafe-top div{
+        justify-content: center;
+        gap: 64px;
+    }
+
+} 
