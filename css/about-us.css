@@ -16,6 +16,22 @@ figure{
     text-align: center;
 }
 
+#description-about-us{
+    font-family:var(--paragraphs);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#title-about-us{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#title-founders{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 #founders-image{
     display: flex;
     justify-content: space-between;
@@ -26,7 +42,7 @@ figure{
     height: 40vw;
     width: 40vw;
     overflow:visible;
-    margin-bottom: 202px;
+    margin-bottom: 50px;
 }
 
 #founders-image img{
