@@ -22,4 +22,4 @@ Latest functioning website build running [here](https://infernal-triad.netlify.a
 
 ### Benchmark screenshots:
 
-We added a couple of screenshots of benchmarks to our repo, that you can find [here](./assets/lightouse_benchmark)
+We added a couple of screenshots of benchmarks to our repo, that you can find [here](./assets/lightouse benchmark)
