@@ -23,191 +23,207 @@
 </head>
 
 <body>
+    <!--Header section -->
+    <header aria-label="Header Section">
+        <a href="index.html" class="logo-container" aria-label="Matter Museum Home">
+            <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
+        </a>
+        <div class="title-and-slogan">
+            <div class="title">
+                <span class="matter">
+                    Matter
+                </span>
+                <span class="museum">
+                Museum
+                </span>
+            </div>
+            <div class="slogan">
+                <p>- Because science</p>
+                <p id="matters">matters</p>
+            </div>
+        </div>
 
-<header>
-    <a href="#" class="logo-container">
-        <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
-    </a>
-    <div class="title-and-slogan">
-        <div class="title">
-            <span class="matter">
-                Matter
+        <!--Overlay for Hamburger menu-->
+        <div class="nav">
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" id="menu-label">
+                <span class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </label>
+            <div class="overlay">
+                <ul class="main-nav">
+                    <li>
+                        <a class="nav" href="exhibitions.html" aria-label="Read more about our fantastic exhibitions">Exhibitions</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="contact-us.html" aria-label="Need to get in touch with any questions or feedback for us?">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="tickets.html" aria-label="Reservation of tickets for a visit">Tickets</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="about-us.html" aria-label="Read more about our founders">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Overlay for Hamburger menu-->
+        <ul class="display-nav">
+            <li>
+                <a class="dis-nav" href="exhibitions.html" aria-label="Read more about our fantastic exhibitions">Exhibitions</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="contact-us.html" aria-label="Need to get in touch with any questions or feedback for us?">Contact us</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="tickets.html" aria-label="Reservation of tickets for a visit">Tickets</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="about-us.html" aria-label="Read more about our founders">About us</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <img class="img" alt="ticket-buying" src="assets/images/ticket-with-overlay.jpg" height="1310" width="1439">
+        <div class="ticket-price">
+            <div class="ticket-grid">
+                <div class="ticket-header">
+                    <h1>BUY TICKETS</h1>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Children (4-17)</p>
+                    <p>NOK 70</p>
+                </div>
+                <div class="ticket-second-row">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <p>1</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Adult (18 and over)</p>
+                    <p>NOK 170</p>
+                </div>
+                <div class="ticket-second-row">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <p>1</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Student</p>
+                    <p>NOK 100</p>
+                </div>
+                <div class="ticket-second-row">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <p>1</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Total</p>
+                </div>
+                <div class="ticket-second-row">
+                    <p>NOK 340</p>
+                </div>
+            </div>
+        </div>
+        <div class="calendar-section">
+            <h2>SELECT DATE</h2>
+            <div class="calendar-container">
+                <img alt="calendar" class="calendar" src="assets/images/calendar.png">
+            </div>
+            <div class="button-container">
+                <button class="green-button button-component">
+                    Add discount code
+                </button>
+                <button class="green-button button-component">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer aria-label="Footer Section">
+        <div class="contact">
+            <h2>Contact:</h2>
+            <a href="mailto:contact@museum.com" aria-label="Compose a new mail to our support team">
+                <p>contact@mattermuseum.com</p>
+            </a>
+            <a href="tel:47 900 50 420"  aria-label="Click to call our support phone number">
+                <p id="phone">+47 900 50 420</p>
+            </a>
+            <p>(Mon-Fri 10:00-17:00)</p>
+        </div>
+        <div class="so-me">
+            <div class="follow-us">
+                <h2>Follow us on social media:</h2>
+            </div>
+            <div class="so-me-container">
+                <a href="https://www.instagram.com/instagram/" aria-label="Visit us on our Instagram page">
+                    <img class="so-me-logo" id="ig-icon-footer" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+                </a>
+                <a href="https://www.tiktok.com/explore" aria-label="Visit us on our Titok page">
+                    <img class="so-me-logo" id="tt-icon-footer" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+                </a>
+                <a href="https://www.youtube.com/" aria-label="Visit us on our YouTube page">
+                    <img class="so-me-logo" id="yt-icon-footer" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+                </a>
+                <a href="https://www.facebook.com/"  aria-label="Visit us on our Facebook page">
+                    <img class="so-me-logo" id="fb-icon-footer" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+                </a>
+            </div>
+        </div>
+        <div class="paragraph-footer">
+            <div class="paragraph-container">
+                <p>
+                    Want to get updated on the newest exhibitions and events at the museum?
+                </p>
+            </div>
+        </div>
+        <div class="sign-up">
+            <label class="label-email" for="email-box">Sign up to our newsletter:</label>
+            <div class="email">
+                <input type="text" id="email-box" placeholder="email"/>
+                <button type="button" class="button-component green-button" id="sign-up-btn" aria-label="Sign Up Button">
+                    Sign up
+                </button>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="first-row">
+                <h2>Facilities</h2>
+                <a href="exhibitions.html" aria-label="Read more about our fantastic exhibitions">Exhibitions</a>
+                <a href="#" aria-label="Inactive link">Events</a>
+                <a href="#" aria-label="Inactive link">Schools</a>
+                <a href="cafe.html" aria-label="Read more about our fantastic museum cafe">Cafe</a>
+            </div>
+            <div class="second-row">
+                <h2>Media</h2>
+                <a href="#" aria-label="Inactive link">Images</a>
+                <a href="#" aria-label="Inactive link">Videos</a>
+            </div>
+            <div class="third-row">
+                <h2>Contact</h2>
+                <a href="#" aria-label="Inactive link">Volunteering</a>
+                <a href="#" aria-label="Inactive link">Our partners</a>
+                <a href="contact-us.html" aria-label="Need to get in touch with any questions or feedback for us?">Contact us</a>
+                <a href="about-us.html" aria-label="Read more about our founders">About us</a>
+            </div>
+        </div>
+        <div class="language">
+            <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+            <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
+        </div>
+        <div class="copyright">
+            <span id="copyright-header">
+                Copyright © 2023 Matter Museum. All rights reserved.
             </span>
-            <span class="museum">
-             Museum
+            <span id="copyright-hidden">
+                The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
             </span>
         </div>
-        <div class="slogan">
-            <p>- Because science</p>
-            <p id="matters">matters</p>
-        </div>
-    </div>
-    <div class="nav">
-        <input type="checkbox" id="menu-checkbox"/>
-        <label for="menu-checkbox" id="menu-label">
-            <span class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-        </label>
-        <div class="overlay">
-            <ul class="main-nav">
-                <li>
-                    <a class="nav" href="#">Exhibition</a>
-                </li>
-                <li>
-                    <a class="nav" href="#">Gallery</a>
-                </li>
-                <li>
-                    <a class="nav" href="#">Tickets</a>
-                </li>
-                <li>
-                    <a class="nav" href="#">About us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <ul class="display-nav">
-        <li>
-            <a class="dis-nav" href="#">Exhibition</a>
-        </li>
-        <li>
-            <a class="dis-nav" href="#">Gallery</a>
-        </li>
-        <li>
-            <a class="dis-nav" href="#">Tickets</a>
-        </li>
-        <li>
-            <a class="dis-nav" href="#">About us</a>
-        </li>
-    </ul>
-</header>
-
-<div class="content">
-    <img class="img" alt="ticket-buying" src="assets/images/ticket-with-overlay.jpg" height="1310" width="1439">
-    <div class="ticket-price">
-        <div class="ticket-grid">
-            <div class="ticket-header">
-                <h1>BUY TICKETS</h1>
-            </div>
-            <div class="ticket-first-row">
-                <p>Children (4-17)</p>
-                <p>NOK 70</p>
-            </div>
-            <div class="ticket-second-row">
-                <i class="fa-solid fa-circle-minus"></i>
-                <p>1</p>
-                <i class="fa-solid fa-circle-plus"></i>
-            </div>
-            <div class="ticket-first-row">
-                <p>Adult (18 and over)</p>
-                <p>NOK 170</p>
-            </div>
-            <div class="ticket-second-row">
-                <i class="fa-solid fa-circle-minus"></i>
-                <p>1</p>
-                <i class="fa-solid fa-circle-plus"></i>
-            </div>
-            <div class="ticket-first-row">
-                <p>Student</p>
-                <p>NOK 100</p>
-            </div>
-            <div class="ticket-second-row">
-                <i class="fa-solid fa-circle-minus"></i>
-                <p>1</p>
-                <i class="fa-solid fa-circle-plus"></i>
-            </div>
-            <div class="ticket-first-row">
-                <p>Total</p>
-            </div>
-            <div class="ticket-second-row">
-                <p>NOK 340</p>
-            </div>
-        </div>
-    </div>
-    <div class="calendar-section">
-        <h2>SELECT DATE</h2>
-        <div class="calendar-container">
-            <img alt="calendar" class="calendar" src="assets/images/calendar.png">
-        </div>
-        <div class="button-container">
-            <button class="green-button button-component">
-                Add discount code
-            </button>
-            <button class="green-button button-component">
-                Checkout
-            </button>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="contact">
-        <h2>Contact:</h2>
-        <p>contact@mattermuseum.com</p>
-        <p id="phone">+47 900 50 420</p>
-        <p>(Mon-Fri 10:00-17:00)</p>
-    </div>
-    <div class="so-me">
-        <div class="follow-us">
-            <h2>Follow us on social media:</h2>
-        </div>
-        <div class="so-me-container">
-            <img class="so-me-logo" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
-            <img class="so-me-logo" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
-            <img class="so-me-logo" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
-            <img class="so-me-logo" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
-        </div>
-    </div>
-    <div class="paragraph-footer">
-        <div class="paragraph-container">
-            <p>
-                Want to get updated on the newest exhibitions and events at the museum?
-            </p>
-        </div>
-    </div>
-    <div class="sign-up">
-        <label class="label-email" for="email-box">Sign up to our newsletter:</label>
-        <div class="email">
-            <input type="text" id="email-box" placeholder="email"/>
-            <button type="button" class="button-component green-button" id="sign-up-btn">
-                Sign up
-            </button>
-        </div>
-    </div>
-    <div class="footer-links">
-        <div class="first-row">
-            <h2>Facilities</h2>
-            <a href="#">Exhibitions</a>
-            <a href="#">Events</a>
-            <a href="#">Schools</a>
-            <a href="#">Cafe</a>
-        </div>
-        <div class="second-row">
-            <h2>Media</h2>
-            <a href="#">Images</a>
-            <a href="#">Videos</a>
-        </div>
-        <div class="third-row">
-            <h2>Contact</h2>
-            <a href="#">Volunteering</a>
-            <a href="#">Our partners</a>
-            <a href="#">Contact us</a>
-        </div>
-    </div>
-    <div class="language">
-        <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
-        <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
-    </div>
-    <div class="copyright">
-        <span id="copyright-header">
-            Copyright © 2023 Matter Museum. All rights reserved.
-        </span>
-        <span id="copyright-hidden">
-            The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
-        </span>
-    </div>
-</footer>
-
+    </footer>
 </body>
 
 </html>

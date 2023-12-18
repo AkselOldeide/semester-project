@@ -23,207 +23,214 @@
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body aria-label="Matter Museum - Because science matter">
-<header aria-label="Header Section">
-    <a href="index.html" class="logo-container" aria-label="Matter Museum Home">
-        <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
-    </a>
-    <div class="title-and-slogan">
-        <div class="title">
-            <span class="matter">
-                Matter
-            </span>
-            <span class="museum">
-             Museum
-            </span>
+    <!--Header section -->
+    <header aria-label="Header Section">
+        <a href="index.html" class="logo-container" aria-label="Matter Museum Home">
+            <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
+        </a>
+        <div class="title-and-slogan">
+            <div class="title">
+                <span class="matter">
+                    Matter
+                </span>
+                <span class="museum">
+                Museum
+                </span>
+            </div>
+            <div class="slogan">
+                <p>- Because science</p>
+                <p id="matters">matters</p>
+            </div>
         </div>
-        <div class="slogan">
-            <p>- Because science</p>
-            <p id="matters">matters</p>
-        </div>
-    </div>
-    <div class="nav">
-        <input type="checkbox" id="menu-checkbox"/>
-        <label for="menu-checkbox" id="menu-label">
-            <span class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-        </label>
-        <div class="overlay">
-            <ul class="main-nav">
-                <li>
-                    <a class="nav" href="exhibitions.html">Exhibition</a>
-                </li>
-                <li>
-                    <a class="nav" href="#">Gallery</a>
-                </li>
-                <li>
-                    <a class="nav" href="tickets.html">Tickets</a>
-                </li>
-                <li>
-                    <a class="nav" href="about-us.html">About us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <ul class="display-nav">
-        <li>
-            <a class="dis-nav" href="exhibitions.html">Exhibition</a>
-        </li>
-        <li>
-            <a class="dis-nav" href="#">Gallery</a>
-        </li>
-        <li>
-            <a class="dis-nav" href="tickets.html">Tickets</a>
-        </li>
-        <li>
-            <a class="dis-nav" href="about-us.html">About us</a>
-        </li>
-    </ul>
-</header>
 
-<div class="contents" aria-label="Main Content">
-    <div class="hero-banner">
-        <div class="overlay-pic-1">
-        </div>
-        <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
-             width="543">
-        <span>
-            Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
-        </span>
-    </div>
-    <div class="button-container">
-        <button class="yellow-button button-component" aria-label="Explore Button">
-            Explore
-        </button>
-    </div>
-    <div class="matters" aria-label="Four States of Matters Section">
-        <h1>4 STATES OF MATTERS</h1>
-        <div class="four-states">
-            <div class="state">
-                <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
-                <p>Solid</p>
-            </div>
-            <div class="state">
-                <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
-                <p>Liquid</p>
-            </div>
-            <div class="state">
-                <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
-                <p>gas</p>
-            </div>
-            <div class="state">
-                <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
-                     width="208">
-                <p>plasma</p>
+        <!--Overlay for Hamburger menu-->
+        <div class="nav">
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" id="menu-label">
+                <span class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </label>
+            <div class="overlay">
+                <ul class="main-nav">
+                    <li>
+                        <a class="nav" href="exhibitions.html" aria-label="Read more about our fantastic exhibitions">Exhibitions</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="contact-us.html" aria-label="Need to get in touch with any questions or feedback for us?">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="tickets.html" aria-label="Reservation of tickets for a visit">Tickets</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="about-us.html" aria-label="Read more about our founders">About us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="info" aria-label="Information Section">
-        <div class="container">
-            <a class="pic" href="#">
-                <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                     width="400">
-            </a>
+        <!--Overlay for Hamburger menu-->
+        <ul class="display-nav">
+            <li>
+                <a class="dis-nav" href="exhibitions.html" aria-label="Read more about our fantastic exhibitions">Exhibitions</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="contact-us.html" aria-label="Need to get in touch with any questions or feedback for us?">Contact us</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="tickets.html" aria-label="Reservation of tickets for a visit">Tickets</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="about-us.html" aria-label="Read more about our founders">About us</a>
+            </li>
+        </ul>
+    </header>
+
+    <!--Main section-->
+    <main class="contents" aria-label="Main Content">
+        <div class="hero-banner">
+            <div class="overlay-pic-1">
+            </div>
+            <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
+                width="543">
+            <span>
+                Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
+            </span>
         </div>
-        <div class="container">
-            <a class="pic" href="#">
-                <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                     width="400">
-            </a>
-        </div>
-        <div class="container">
-            <a class="pic" href="#">
-                <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-            </a>
-        </div>
-    </div>
-    <div class="explore-matter" aria-label="Explore Matters Section">
-        <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
-           Explore matters
-        </a>
-        <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
-             width="834">
-    </div>
-</div>
-<footer aria-label="Footer Section">
-    <div class="contact">
-        <h2>Contact:</h2>
-        <a href="mailto:contact@museum.com">
-            <p>contact@mattermuseum.com</p>
-        </a>
-        <a href="tel:47 900 50 420">
-            <p id="phone">+47 900 50 420</p>
-        </a>
-        <p>(Mon-Fri 10:00-17:00)</p>
-    </div>
-    <div class="so-me">
-        <div class="follow-us">
-            <h2>Follow us on social media:</h2>
-        </div>
-        <div class="so-me-container">
-            <a href="https://www.instagram.com/instagram/">
-                <img class="so-me-logo" id="ig-icon-footer" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
-            </a>
-            <a href="https://www.tiktok.com/explore">
-                <img class="so-me-logo" id="tt-icon-footer" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
-            </a>
-            <a href="https://www.youtube.com/">
-                <img class="so-me-logo" id="yt-icon-footer" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
-            </a>
-            <a href="https://www.facebook.com/">
-                <img class="so-me-logo" id="fb-icon-footer" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
-            </a>
-        </div>
-    </div>
-    <div class="paragraph-footer">
-        <div class="paragraph-container">
-            <p>
-                Want to get updated on the newest exhibitions and events at the museum?
-            </p>
-        </div>
-    </div>
-    <div class="sign-up">
-        <label class="label-email" for="email-box">Sign up to our newsletter:</label>
-        <div class="email">
-            <input type="text" id="email-box" placeholder="email"/>
-            <button type="button" class="button-component green-button" id="sign-up-btn" aria-label="Sign Up Button">
-                Sign up
+        <div class="button-container">
+            <button class="yellow-button button-component" aria-label="Explore Button">
+                Explore
             </button>
         </div>
-    </div>
-    <div class="footer-links">
-        <div class="first-row">
-            <h2>Facilities</h2>
-            <a href="/exhibitions.html">Exhibitions</a>
-            <a href="#">Events</a>
-            <a href="#">Schools</a>
-            <a href="/cafe.html">Cafe</a>
+        <div class="matters" aria-label="Four States of Matters Section">
+            <h1>4 STATES OF MATTERS</h1>
+            <div class="four-states">
+                <div class="state">
+                    <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
+                    <p>Solid</p>
+                </div>
+                <div class="state">
+                    <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
+                    <p>Liquid</p>
+                </div>
+                <div class="state">
+                    <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
+                    <p>gas</p>
+                </div>
+                <div class="state">
+                    <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
+                        width="208">
+                    <p>plasma</p>
+                </div>
+            </div>
         </div>
-        <div class="second-row">
-            <h2>Media</h2>
-            <a href="#">Images</a>
-            <a href="#">Videos</a>
+        <div class="info" aria-label="Information Section">
+            <div class="container">
+                <a class="pic" href="#" aria-label="Inactive link">
+                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
+                        width="400">
+                </a>
+            </div>
+            <div class="container">
+                <a class="pic" href="#" aria-label="Inactive link">
+                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
+                        width="400">
+                </a>
+            </div>
+            <div class="container">
+                <a class="pic" href="#" aria-label="Inactive link">
+                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
+                </a>
+            </div>
         </div>
-        <div class="third-row">
-            <h2>Contact</h2>
-            <a href="#">Volunteering</a>
-            <a href="#">Our partners</a>
-            <a href="/contact-us.html">Contact us</a>
-            <a href="about-us.html">About us</a>
+        <div class="explore-matter" aria-label="Explore Matters Section">
+            <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
+            Explore matters
+            </a>
+            <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.png" height="268"
+                width="834">
         </div>
-    </div>
-    <div class="language">
-        <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
-        <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
-    </div>
-    <div class="copyright">
-        <span id="copyright-header">
-            Copyright © 2023 Matter Museum. All rights reserved.
-        </span>
-        <span id="copyright-hidden">
-            The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
-        </span>
-    </div>
-</footer>
+    </main>
+
+    <!--Footer section-->
+    <footer aria-label="Footer Section">
+        <div class="contact">
+            <h2>Contact:</h2>
+            <a href="mailto:contact@museum.com" aria-label="Compose a new mail to our support team">
+                <p>contact@mattermuseum.com</p>
+            </a>
+            <a href="tel:47 900 50 420"  aria-label="Click to call our support phone number">
+                <p id="phone">+47 900 50 420</p>
+            </a>
+            <p>(Mon-Fri 10:00-17:00)</p>
+        </div>
+        <div class="so-me">
+            <div class="follow-us">
+                <h2>Follow us on social media:</h2>
+            </div>
+            <div class="so-me-container">
+                <a href="https://www.instagram.com/instagram/" aria-label="Visit us on our Instagram page">
+                    <img class="so-me-logo" id="ig-icon-footer" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+                </a>
+                <a href="https://www.tiktok.com/explore" aria-label="Visit us on our Titok page">
+                    <img class="so-me-logo" id="tt-icon-footer" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+                </a>
+                <a href="https://www.youtube.com/" aria-label="Visit us on our YouTube page">
+                    <img class="so-me-logo" id="yt-icon-footer" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+                </a>
+                <a href="https://www.facebook.com/"  aria-label="Visit us on our Facebook page">
+                    <img class="so-me-logo" id="fb-icon-footer" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+                </a>
+            </div>
+        </div>
+        <div class="paragraph-footer">
+            <div class="paragraph-container">
+                <p>
+                    Want to get updated on the newest exhibitions and events at the museum?
+                </p>
+            </div>
+        </div>
+        <div class="sign-up">
+            <label class="label-email" for="email-box">Sign up to our newsletter:</label>
+            <div class="email">
+                <input type="text" id="email-box" placeholder="email"/>
+                <button type="button" class="button-component green-button" id="sign-up-btn" aria-label="Sign Up Button">
+                    Sign up
+                </button>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="first-row">
+                <h2>Facilities</h2>
+                <a href="exhibitions.html" aria-label="Read more about our fantastic exhibitions">Exhibitions</a>
+                <a href="#" aria-label="Inactive link">Events</a>
+                <a href="#" aria-label="Inactive link">Schools</a>
+                <a href="cafe.html" aria-label="Read more about our fantastic museum cafe">Cafe</a>
+            </div>
+            <div class="second-row">
+                <h2>Media</h2>
+                <a href="#" aria-label="Inactive link">Images</a>
+                <a href="#" aria-label="Inactive link">Videos</a>
+            </div>
+            <div class="third-row">
+                <h2>Contact</h2>
+                <a href="#" aria-label="Inactive link">Volunteering</a>
+                <a href="#" aria-label="Inactive link">Our partners</a>
+                <a href="contact-us.html" aria-label="Need to get in touch with any questions or feedback for us?">Contact us</a>
+                <a href="about-us.html" aria-label="Read more about our founders">About us</a>
+            </div>
+        </div>
+        <div class="language">
+            <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+            <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
+        </div>
+        <div class="copyright">
+            <span id="copyright-header">
+                Copyright © 2023 Matter Museum. All rights reserved.
+            </span>
+            <span id="copyright-hidden">
+                The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
+            </span>
+        </div>
+    </footer>
 </body>
 </html>
