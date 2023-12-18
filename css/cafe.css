@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body{
-    background-image: url(../assets/images/cafe.png);
+    background-image: url(../assets/images/cafe.webp);
     background-repeat: no-repeat ;
     background-size:cover;
     background-position: center ;
@@ -124,7 +124,7 @@ main{
    ========================================================================== */
    @media (min-width: 1300px){
     body{
-        background-image: url(../assets/images/cafe.png);
+        background-image: url(../assets/images/cafe.webp);
         border-left: 250px;
         border-right: 250px;
     }
