@@ -11,7 +11,7 @@ Latest functioning website build running [here](https://infernal-triad.netlify.a
  
 🌈 Gradient for the background on the "exhibitions"-page was generated using: [CSS Gradient](https://cssgradient.io)
 
-🎥 Animations and videos used on our page are from [Freepik](https://www.freepik.com)
+🎥 We designd our page at [Figma design](https://www.figma.com/file/Ht9SE1zJZ0vdDgJvCATdcs/CA---Science-Museum?type=design&node-id=140%3A2902&mode=design&t=LHZ69nni4sdxzVG6-1)
 
 🖼️ Illustration images created with AI image generators:
 [Midjourney](https://www.midjourney.com/home) and [Bing Ai](https://www.bing.com/create).
