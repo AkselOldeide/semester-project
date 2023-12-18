@@ -4,12 +4,12 @@ main {
 }
 
 body {
-    background-image: url("/assets/logo/background-payment.png");
+    background-image: url("/assets/images/background-payment.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-
 }
+
 #all-done-box {
     background-color: rgba(165, 169, 169, 0.1);
     display: flex;
