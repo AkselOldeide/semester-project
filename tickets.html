@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<!--General meta - for ALL pages-->
+    <!--Stylesheet, Author, View-->
     <link rel="stylesheet" href="css/styles.css"/>
     <meta name="author" content="Aksel, Helene, Panida">
     <meta charset="UTF-8">
@@ -16,9 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
-    <!--Specific meta For THIS page-->
+<!--Specific meta For THIS page-->
     <title>Tickets</title>
-    <meta name="description" content="Description"/>
+    <meta name="description" content="Order tickets to our museum"/>
     <link rel="stylesheet" href="css/tickets.css"/>
 </head>
 
@@ -133,12 +134,14 @@
                 <img alt="calendar" class="calendar" src="assets/images/calendar.png">
             </div>
             <div class="button-container">
-                <button class="green-button button-component">
+                <button class="green-button button-component" aria-label="Inactive link">
                     Add discount code
                 </button>
-                <button class="green-button button-component">
-                    Checkout
-                </button>
+                <a href="checkout.html">
+                    <button class="green-button button-component">
+                        Checkout
+                    </button>
+                </a>
             </div>
         </div>
     </div>

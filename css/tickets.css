@@ -25,6 +25,10 @@
     margin-bottom: 100px;
 }
 
+i{
+    overflow: visible;
+}
+
 .ticket-grid {
     position: relative;
     z-index: 3;
