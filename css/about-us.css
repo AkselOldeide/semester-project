@@ -42,7 +42,7 @@ figure{
     height: 40vw;
     width: 40vw;
     overflow:visible;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 #founders-image img{
@@ -128,7 +128,7 @@ figure{
 }
 
 #founders-image #panida:hover{
-    box-shadow: #5e0101 0px 0px 40px;
+    box-shadow: #e50000 0px 0px 40px;
 }
 
 @media (max-width: 833px){
