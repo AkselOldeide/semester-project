@@ -6,12 +6,15 @@
     overflow: hidden;
 }
 
+i{
+    overflow: visible;
+}
+
 .img {
     z-index: -3;
     position: absolute;
     object-fit: cover;
     height: 100%;
-    width: 100%;
 }
 
 .ticket-price {
@@ -96,13 +99,13 @@
 
 .pay-with {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: center;
     height: 200px;
+    align-items: center;
 }
 
 .payment-logo {
-    height: auto;
+    height: 60px;
     object-fit: contain;
 }
 

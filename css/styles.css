@@ -82,7 +82,6 @@
     backdrop-filter: blur(2px);
     transition-duration: 200ms;
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 /* ==========================================================================
