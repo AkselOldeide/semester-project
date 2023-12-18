@@ -5,8 +5,10 @@ The winter 2023 group semester project for [Aksel Oldeide](https://github.com/Ak
 
 Latest functioning website build running [here](https://infernal-triad.netlify.app)
 
-## Paths and assets:
+## Structure:
+### Navigation:
 
+## Paths and assets:
 ### External tools and software:
  
 🌈 Gradient for the background on the "exhibitions"-page was generated using: [CSS Gradient](https://cssgradient.io)
@@ -17,3 +19,7 @@ Latest functioning website build running [here](https://infernal-triad.netlify.a
 [Midjourney](https://www.midjourney.com/home) and [Bing Ai](https://www.bing.com/create).
 
 📄 Our report can be found on [google docs](https://docs.google.com/document/d/1x1TJLvF-RBRjc-UmvyzwQTB37a2tGcHqO2SCG1Trmd4/edit?usp=sharing)
+
+### Benchmark screenshots:
+
+We added a couple of screenshots of benchmarks to our repo, that you can find [here](./assets/lightouse_benchmark)
