@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--General meta - for ALL pages-->
+<!--General meta - for ALL pages-->
     <!--Stylesheet, Author, View-->
     <link rel="stylesheet" href="css/styles.css"/>
     <meta name="author" content="Aksel, Helene, Panida">
@@ -17,12 +17,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
-    <!--Specific meta For THIS page-->
+<!--Specific meta For THIS page-->
     <title>Exhibitions</title>
     <meta name="description" content="Look at our beautiful exhibitions"/>
     <link rel="stylesheet" href="css/exhibitions.css"/>
 </head>
 <body>
+    <header aria-label="Header Section">
+        <a href="index.html" class="logo-container" aria-label="Matter Museum Home">
+            <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
+        </a>
+        <div class="title-and-slogan">
+            <div class="title">
+                <span class="matter">
+                    Matter
+                </span>
+                <span class="museum">
+                 Museum
+                </span>
+            </div>
+            <div class="slogan">
+                <p>- Because science</p>
+                <p id="matters">matters</p>
+            </div>
+        </div>
+        <div class="nav">
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" id="menu-label">
+                <span class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </label>
+            <div class="overlay">
+                <ul class="main-nav">
+                    <li>
+                        <a class="nav" href="exhibitions.html">Exhibition</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="tickets.html">Tickets</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="about-us.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="display-nav">
+            <li>
+                <a class="dis-nav" href="exhibitions.html">Exhibition</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="#">Gallery</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="tickets.html">Tickets</a>
+            </li>
+            <li>
+                <a class="dis-nav" href="about-us.html">About us</a>
+            </li>
+        </ul>
+    </header>
     <main>
         <section id="top-banner">
             <h1>Exhibitions</h1>
@@ -30,7 +87,8 @@
 
         <article id="states-of-matter-description">
             <h2>The states of matter</h2>
-            <p>Embark on a journey through the building blocks of our universe at this captivating exhibition. 
+            <p>
+                Embark on a journey through the building blocks of our universe at this captivating exhibition. 
                 Explore the four states of matter—gas, liquid, solid, and plasma—unraveling their unique secrets. 
                 Engage with interactive exhibits that blend science and curiosity, 
                 offering a brief yet mesmerizing glimpse into the forces shaping our world. 
@@ -42,8 +100,10 @@
         <section id="exhibition-cards">
 
             <a href="#" class="exhibition-card">
-                <img src="./assets/images/show-1-1.jpeg" alt="">
-                <div>
+                <div class="element-image">
+                    <img src="./assets/images/show-1-1.jpeg" alt="">
+                </div>
+                <div class="text-matter">
                     <h3>Solid State: Unveiling Stability and Structure</h3>
                     <p class="element-long-description">
                         Enter the realm of solids at Marvels of Matter, 
@@ -57,8 +117,10 @@
             </a>
 
             <a href="#" class="exhibition-card">
-                <img src="./Assets/Images/liquid-1-1.jpeg" alt="">
-                <div>
+                <div class="element-image">
+                    <img src="./Assets/Images/liquid-1-1.jpeg" alt="">
+                </div>
+                <div class="text-matter">
                     <h3>Liquid Dynamics: Flowing Through the Marvels of Matter</h3>
                     <p class="element-long-description">
                         Dive into the captivating realm of liquids at Marvels of Matter, where fluidity reigns supreme. 
@@ -73,8 +135,10 @@
             </a>
 
             <a href="#" class="exhibition-card">
-                <img src="./assets/Images/gas-1.jpeg" alt="">
-                <div>
+                <div class="element-image">
+                    <img src="./assets/Images/gas-1.jpeg" alt="">
+                </div>
+                <div class="text-matter">
                     <h3>Solid State: Unveiling Stability and Structure</h3>
                     <p class="element-long-description">
                         Embark on a journey through the airy expanse of the gas state at Marvels of Matter. Here, 
@@ -89,8 +153,10 @@
             </a>
 
             <a href="#" class="exhibition-card">
-                <img src="./assets/images/plasma-1.jpeg" alt="">
-                <div>
+                <div class="element-image">
+                    <img src="./assets/images/plasma-1.jpeg" alt="">
+                </div>
+                <div class="text-matter">
                     <h3>Plasma Unleashed: The Fiery Frontier</h3>
                     <p class="element-long-description">
                         Embark on an electrifying expedition into the awe-inspiring state of plasma at Marvels of Matter. 
@@ -103,8 +169,87 @@
                     <p class="discover-more">Click here to discover more -></p>
                 </div>
             </a>
-
         </section>
     </main>
+    <footer aria-label="Footer Section">
+        <div class="contact">
+            <h2>Contact:</h2>
+            <a href="mailto:contact@museum.com">
+                <p>contact@mattermuseum.com</p>
+            </a>
+            <a href="tel:47 900 50 420">
+                <p id="phone">+47 900 50 420</p>
+            </a>
+            <p>(Mon-Fri 10:00-17:00)</p>
+        </div>
+        <div class="so-me">
+            <div class="follow-us">
+                <h2>Follow us on social media:</h2>
+            </div>
+            <div class="so-me-container">
+                <a href="https://www.instagram.com/instagram/">
+                    <img class="so-me-logo" id="ig-icon-footer" alt="instagram" src="assets/logo/insta-green.png" height="30" width="30">
+                </a>
+                <a href="https://www.tiktok.com/explore">
+                    <img class="so-me-logo" id="tt-icon-footer" alt="tiktok" src="assets/logo/tiktok-green.png" height="33" width="29">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img class="so-me-logo" id="yt-icon-footer" alt="youtube" src="assets/logo/youtube-green.png" height="21" width="31">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="so-me-logo" id="fb-icon-footer" alt="facebook" src="assets/logo/facebook-green.png" height="33" width="18">
+                </a>
+            </div>
+        </div>
+        <div class="paragraph-footer">
+            <div class="paragraph-container">
+                <p>
+                    Want to get updated on the newest exhibitions and events at the museum?
+                </p>
+            </div>
+        </div>
+        <div class="sign-up">
+            <label class="label-email" for="email-box">Sign up to our newsletter:</label>
+            <div class="email">
+                <input type="text" id="email-box" placeholder="email"/>
+                <button type="button" class="button-component green-button" id="sign-up-btn" aria-label="Sign Up Button">
+                    Sign up
+                </button>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="first-row">
+                <h2>Facilities</h2>
+                <a href="/exhibitions.html">Exhibitions</a>
+                <a href="#">Events</a>
+                <a href="#">Schools</a>
+                <a href="/cafe.html">Cafe</a>
+            </div>
+            <div class="second-row">
+                <h2>Media</h2>
+                <a href="#">Images</a>
+                <a href="#">Videos</a>
+            </div>
+            <div class="third-row">
+                <h2>Contact</h2>
+                <a href="#">Volunteering</a>
+                <a href="#">Our partners</a>
+                <a href="/contact-us.html">Contact us</a>
+                <a href="about-us.html">About us</a>
+            </div>
+        </div>
+        <div class="language">
+            <img class="en" alt="english" src="assets/logo/EN.png" height="30" width="40">
+            <img class="no" alt="norwegian" src="assets/logo/NO-overlay.png" height="30" width="40">
+        </div>
+        <div class="copyright">
+            <span id="copyright-header">
+                Copyright © 2023 Matter Museum. All rights reserved.
+            </span>
+            <span id="copyright-hidden">
+                The content, design, and images on this website are the exclusive property of Matter Museum and are protected by copyright laws. Any unauthorized use, reproduction, or distribution of the materials on this site without the written permission of Matter Museum is strictly prohibited.
+            </span>
+        </div>
+    </footer>
 </body>
 </html>

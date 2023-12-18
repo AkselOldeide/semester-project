@@ -85,6 +85,39 @@
     transform: scale(1.1);
 }
 
+/* ==========================================================================
+   Scrollbar
+   ========================================================================== */
+
+
+   /* width */
+    ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--primary);  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 3px;
+    transition-duration: 300ms;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+    border-radius: 3px;
+  }
+
+
+
+/* ==========================================================================
+    Main structure
+   ========================================================================== */
+
 body {
     background: #1E1E1E;
     width: 100%;
@@ -100,6 +133,11 @@ header {
     justify-content: flex-start;
     z-index: 3;
 }
+
+/* ==========================================================================
+   Header and footer
+   ========================================================================== */
+
 
 .logo-container {
     display: flex;

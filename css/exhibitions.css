@@ -14,122 +14,231 @@ main{
 }
 
 #top-banner{
-    background-image: url(./assets/images/banner-image.png);
-    width: 100%;
-    height: 130px;
+    background-image: url(/assets/images/banner-image.png);
     background-repeat: no-repeat;
-    background-size:cover;
-    margin: auto;
+    background-size: cover;
+    background-position:center ;
+    width: 100%;
+    height: 133px;
     display: flex;
 }
 
 #top-banner h1{
+    font-family: var(--flashy-heading);
     margin: auto;
-    display: flex;
+    background-color: (0, 0, 0, 0.312)black;
+    text-shadow: 0px 0px 10px black;
 }
 
-#states-of-matter-description, #top-banner {
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0 32px;
-}
-
-.exhibition-card img{
-    height: 188px;
-    width: 337px;
-    object-fit:cover;
+#exhibition-cards{
+    width: 100%;
+    padding: 20px;
 }
 
 .exhibition-card{
-    background-color: #000000b3;
-    border-radius: 10px;
-    color: #FFFFFF;
-    height: auto;
+    background-color: #000000c1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 8px;
+    border-radius: 10px;
     text-align: center;
-    align-items: center;
-    margin: 20px 32px;
-    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+.exhibition-card img{
+    border-radius: 5px;
+    height: 188px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.exhibition-card h3{
+    font-family: var(--flashy-heading);
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 8px; 
+}
+
+.discover-more{
+    font-family: var(--paragraphs);
+    font-size: 10px;
+    margin-bottom: 16px;
 }
 
 .element-long-description{
     display: none;
+    font-family: var(--paragraphs);
 }
 
-/*Media Queries*/
+.exhibition-card:hover{
+    background-color: #29794a58;
+    transition-duration: 200ms;
+    text-shadow:black 0 0 10;
+    box-shadow: 2px 2px 10px black;
+}
+
+.exhibition-card:hover h3{
+    text-shadow: black 1px 1px 5px;
+}
+
+.exhibition-card:hover p{
+    text-shadow: black 1px 1px 5px;
+}
 
 
-/*Breakpoint - Tablet*/
-@media (min-width: 750px){
-    .exhibition-card img{
-        height: 333px;
-        width: 239px;
-        object-fit:cover;
-    }
+#states-of-matter-description{
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    text-shadow: black 1px 1px 5px;
+}
 
+#states-of-matter-description h2{
+    font-family:  var(--heading);
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#states-of-matter-description p{
+    font-family: var(--paragraphs);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   Scrollbar
+   ========================================================================== */
+
+
+   /* width */
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, rgba(192,0,0,1) 0%, rgba(255,215,0,1) 49%, rgba(53,89,215,1) 100%);  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3px;
+    transition-duration: 300ms;
+    box-shadow: 0px 0px 0px 999999vw var(--primary)   ;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff21;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 999999vw var(--primary)   ;
+  }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   /*Breakpoint - Tablet*/
+    @media (min-width: 750px){
     .exhibition-card{
-        display: flex;
         flex-direction: row;
-    }
-
-    .exhibition-card div{
-        margin-left: 32px;
-        margin-right: 32px;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        height: 100%;
-    }
-
-    .element-long-description{
-        display:block;
-    }
-
-    .discover-more{
-        text-align: end;
-        align-items: end;
     }
 
     #top-banner{
-        height: 300px;
+        height: 268px;
     }
-}
 
-/*Breakpoint - Desktop*/
+    .exhibition-card img{
+        height: 333px;
+        width: 239px;
+        object-fit: cover;
+        align-self: flex-start;
+        object-fit:cover;
+    }
+
+    .element-long-description{
+        display: block;
+    }
+
+    .text-matter{
+        text-overflow: clip;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+    }
+
+    .element-image{
+        height: 333px;
+        width: 239px;
+        overflow: visible;
+        object-fit: cover;
+    }
+
+    .discover-more{
+        text-align: right;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    .exhibition-card h3{
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    #states-of-matter-description p{
+        padding-left: 100px;
+        padding-right: 100px;
+        text-shadow: black 1px 1px 5px;
+    }
+
+    #top-banner h1{
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+
+    }
+
+    #exhibition-cards{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    #states-of-matter-description h2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    #states-of-matter-description p{
+        margin-bottom: 40px;
+    }
+    
+    }
+
+
+
+    /*Breakpoint - Desktop*/
 @media (min-width: 1300px){
     #top-banner{
-        height: 500px;
+        height: 400px;
     }
 
-    .exhibition-card img{
-        height: 333px;
-        width: 239px;
-        object-fit:cover;
+    #exhibition-cards{
+        padding-left: 86px;
+        padding-right: 86px;
     }
 
-    .exhibition-card{
-        display: flex;
-        flex-direction: row;
+    #states-of-matter-description{
+        padding-left: 240px;
+        padding-right: 240px;
     }
 
-    .exhibition-card div{
-        margin-left: 32px;
-        margin-right: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    .element-long-description{
-        display:block;
-    }
-
-    .discover-more{
-        text-align: end;
-        align-items: end;
-    }
 
 }
