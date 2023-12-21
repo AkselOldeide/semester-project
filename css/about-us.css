@@ -28,7 +28,7 @@ figure{
 }
 
 #title-founders{
-    margin-top: 16px;
+    margin-top: 40px;
     margin-bottom: 16px;
 }
 
@@ -42,7 +42,8 @@ figure{
     height: 40vw;
     width: 40vw;
     overflow:visible;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
+    margin-top: 40px;
 }
 
 #founders-image img{
@@ -64,11 +65,12 @@ figure{
 }
 
 #nametag-aksel{
-    right: 150%;
+    top: 45%;
 }
 
 #aksel:hover ~ #nametag-aksel{
     display: flex;
+    padding: 10px;
 }
 
 /*Helene*/
@@ -79,12 +81,14 @@ figure{
 }
 
 #nametag-helene{
-    top: 120%;
+    top: 115%;
     text-align: center;
+    padding: 10px;
 }
 
 #helene:hover ~ #nametag-helene{
     display: flex;
+    position: absolute;
 }
 
 /*Panida*/
@@ -94,11 +98,12 @@ figure{
 }
 
 #nametag-panida{
-    left: 150%;
+    top: 45%;
 }
 
 #panida:hover ~ #nametag-panida{
     display: flex;
+    padding: 10px;
 }
 
 /*Nametag*/
@@ -108,7 +113,7 @@ figure{
     position:absolute;
     color: white;
     font-family: var(--flashy-heading);
-    text-shadow: var(--additional) 0px 0px 10px;
+    text-shadow: var(--additional) 0 0 10px;
     transition-duration: 300ms;
     animation-duration: 200ms;
 }
@@ -120,15 +125,15 @@ figure{
 }
 
 #founders-image #helene:hover{
-    box-shadow: #ee68c3 0px 0px 40px;
+    box-shadow: #ee68c3 0 0 40px;
 }
 
 #founders-image #aksel:hover{
-    box-shadow: var(--additional) 0px 0px 40px;
+    box-shadow: var(--additional) 0 0 40px;
 }
 
 #founders-image #panida:hover{
-    box-shadow: #e50000 0px 0px 40px;
+    box-shadow: #e50000 0 0 40px;
 }
 
 @media (max-width: 833px){
@@ -143,7 +148,7 @@ figure{
     }
     
     #aksel{
-        left: 0px;
+        left: 0;
         top: 15%;
     }
     
