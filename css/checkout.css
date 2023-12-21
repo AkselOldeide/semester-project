@@ -97,16 +97,24 @@ i{
     justify-content: center;
 }
 
+.pay-with-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
 .pay-with {
     display: flex;
     justify-content: center;
-    height: 200px;
+    width: 100%;
     align-items: center;
 }
 
 .payment-logo {
-    height: 60px;
+    width: 100%;
+    display: flex;
     object-fit: contain;
+    align-items: center;
 }
 
 @media (min-width: 834px) {

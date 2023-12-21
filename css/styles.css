@@ -370,10 +370,12 @@ footer {
 .third-row {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .first-row {
     align-items: flex-start;
+    padding-left: 10px;
 }
 
 .second-row {
@@ -389,6 +391,11 @@ footer {
     text-shadow: 0 0 10px;
 }
 
+.third-row {
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
 /*Animation*/
 .button-component:hover{
     border-radius: 16px;
@@ -398,10 +405,6 @@ footer {
     backdrop-filter: blur(2px);
     transition-duration: 200ms;
     cursor: pointer;
-}
-
-.third-row {
-    align-items: flex-end;
 }
 
 .first-row h2,
@@ -425,7 +428,7 @@ footer {
 .third-row a:hover {
     overflow: visible;
     color: #51D88A;
-    text-shadow: #51D88A 0px 0px 10px;
+    text-shadow: #51D88A 0 0 10px;
 }
 .language {
     display: flex;

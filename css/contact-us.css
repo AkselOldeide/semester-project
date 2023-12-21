@@ -27,7 +27,9 @@ p .mini-header{
 /* ==========================================================================
     Font styling 
    ========================================================================== */
-
+*:focus {
+    outline: none;
+}
 
 #contact-form{
     display: flex;
@@ -50,6 +52,7 @@ p .mini-header{
     border-radius: 4px;
     font-family: var(--flashy-heading);
     color: #FFFFFF;
+    width: 100%;
 }
 
 option {
